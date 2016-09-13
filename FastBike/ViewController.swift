@@ -21,9 +21,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func findNearestBike() {
         if let nearestBike = BikeStationFinder.nearestBike(location: location, bikeStations: bikeStations),
             let userLocation = location {
-            let start = MKMapItem(placemark: MKPlacemark(coordinate: userLocation.coordinate))
-            let end = MKMapItem(placemark: MKPlacemark(coordinate: nearestBike.location.coordinate))
-            MKMapItem.openMaps(with: [start, end], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
+            openMaps(start: userLocation, end: nearestBike.location)
         } else {
             showErrorAlert()
         }
@@ -32,12 +30,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func findNearestStation() {
         if let nearestStation = BikeStationFinder.nearestStation(location: location, bikeStations: bikeStations),
             let userLocation = location {
-            let start = MKMapItem(placemark: MKPlacemark(coordinate: userLocation.coordinate))
-            let end = MKMapItem(placemark: MKPlacemark(coordinate: nearestStation.location.coordinate))
-            MKMapItem.openMaps(with: [start, end], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
+            openMaps(start: userLocation, end: nearestStation.location)
         } else {
             showErrorAlert()
         }
+    }
+
+    func openMaps(start: CLLocation, end: CLLocation) {
+        let start = MKMapItem(placemark: MKPlacemark(coordinate: start.coordinate))
+        let end = MKMapItem(placemark: MKPlacemark(coordinate: end.coordinate))
+        MKMapItem.openMaps(with: [start, end], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
     }
 
     func showErrorAlert() {
