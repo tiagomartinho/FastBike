@@ -1,5 +1,4 @@
 import UIKit
-import Alamofire
 import Gloss
 import CoreLocation
 import MapKit
@@ -48,20 +47,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok...", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
-    }
-
-    func getBikeStations() {
-        if let url = URL(string: "https://os.smartcommunitylab.it/core.mobility/bikesharing/trento") {
-            Alamofire.request(url, method: .get).responseJSON { response in
-                if let JSON = response.result.value as? [Gloss.JSON] {
-                    for bikeJSON in JSON {
-                        let bikeStation = BikeStation(json: bikeJSON)
-                        self.bikeStations.append(bikeStation)
-                        self.mapView.addAnnotation(bikeStation)
-                    }
-                }
-            }
-        }
     }
 
     func getUserPosition() {
