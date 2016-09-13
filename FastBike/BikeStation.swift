@@ -1,4 +1,5 @@
 import Gloss
+import CoreLocation
 
 struct BikeStation {
     let name: String
@@ -7,7 +8,7 @@ struct BikeStation {
     let bikes: Int
     let slots: Int
     let totalSlots: Int
-    let position: Position
+    let location: CLLocation
 }
 
 extension BikeStation: Decodable {
@@ -19,6 +20,7 @@ extension BikeStation: Decodable {
         self.slots = ("slots" <~~ json) ?? 0
         self.totalSlots = ("totalSlots" <~~ json) ?? 0
         let positionArray: [Double] = ("position" <~~ json) ?? [0.0, 0.0]
-        self.position = Position(lattitude: positionArray[0], longitude: positionArray[1])
+        self.location = CLLocation(latitude: positionArray[0],
+                                   longitude: positionArray[1])
     }
 }

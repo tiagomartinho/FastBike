@@ -16,7 +16,6 @@
 		EA2840DF1D88159000BCE287 /* FastBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840DE1D88159000BCE287 /* FastBikeTests.swift */; };
 		EA2840EA1D88159000BCE287 /* FastBikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840E91D88159000BCE287 /* FastBikeUITests.swift */; };
 		EAC6A2F31D88255A0035A62A /* BikeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6A2F21D88255A0035A62A /* BikeStation.swift */; };
-		EAC6A2F51D8825700035A62A /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6A2F41D8825700035A62A /* Position.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		EA2840E91D88159000BCE287 /* FastBikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastBikeUITests.swift; sourceTree = "<group>"; };
 		EA2840EB1D88159000BCE287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC6A2F21D88255A0035A62A /* BikeStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
-		EAC6A2F41D8825700035A62A /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +123,9 @@
 		EA2840C81D88159000BCE287 /* FastBike */ = {
 			isa = PBXGroup;
 			children = (
+				EA2840CD1D88159000BCE287 /* Main.storyboard */,
 				EA2840CB1D88159000BCE287 /* ViewController.swift */,
 				EAC6A2F21D88255A0035A62A /* BikeStation.swift */,
-				EAC6A2F41D8825700035A62A /* Position.swift */,
 				EAC6A2F61D8825990035A62A /* Supporting Files */,
 			);
 			path = FastBike;
@@ -155,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				EA2840C91D88159000BCE287 /* AppDelegate.swift */,
-				EA2840CD1D88159000BCE287 /* Main.storyboard */,
 				EA2840D01D88159000BCE287 /* Assets.xcassets */,
 				EA2840D21D88159000BCE287 /* LaunchScreen.storyboard */,
 				EA2840D51D88159000BCE287 /* Info.plist */,
@@ -353,7 +350,6 @@
 			files = (
 				EA2840CC1D88159000BCE287 /* ViewController.swift in Sources */,
 				EA2840CA1D88159000BCE287 /* AppDelegate.swift in Sources */,
-				EAC6A2F51D8825700035A62A /* Position.swift in Sources */,
 				EAC6A2F31D88255A0035A62A /* BikeStation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
