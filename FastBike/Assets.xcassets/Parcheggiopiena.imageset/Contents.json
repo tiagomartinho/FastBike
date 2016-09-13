@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Parcheggiopiena.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Parcheggiopiena.png",
       "scale" : "2x"
     },
     {

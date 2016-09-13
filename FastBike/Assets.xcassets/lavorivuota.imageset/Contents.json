@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "lavorivuota.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "lavorivuota.png",
       "scale" : "2x"
     },
     {
