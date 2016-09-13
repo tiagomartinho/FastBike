@@ -14,23 +14,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         getBikeStations()
         getUserPosition()
-        trackScreen()
-    }
-
-    func trackScreen() {
-        let tracker = GAI.sharedInstance().defaultTracker
-        tracker?.set(kGAIScreenName, value: "Main View")
-        let builder = GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject]
-        tracker?.send(builder)
+        Analytics.track(screen: "Main View")
     }
 
     @IBAction func findNearestBike() {
         let nearestBike = BikeStationFinder.nearestBike(location: location, bikeStations: bikeStations)
+        track(action: "Station", bikeStation: nearestBike, location: location)
         openMaps(destination: nearestBike)
     }
 
     @IBAction func findNearestStation() {
         let nearestStation = BikeStationFinder.nearestStation(location: location, bikeStations: bikeStations)
+        track(action: "Station", bikeStation: nearestStation, location: location)
         openMaps(destination: nearestStation)
     }
 
@@ -41,5 +36,23 @@ class ViewController: UIViewController {
         } else {
             AlertUtilities.showErrorAlert(viewController: self)
         }
+    }
+
+    func track(action: String, bikeStation: BikeStation?, location: CLLocation?) {
+        let user = location?.stringValue() ?? ""
+        let bike = bikeStation?.location.stringValue() ?? ""
+        let label = "\(user) -> \(bike)"
+        print(label)
+        Analytics.track(category: "Get Directions",
+                        action: "Find Nearest \(action)",
+                        label: label)
+    }
+}
+
+extension CLLocation {
+    func stringValue() -> String {
+        let latitude: Double = self.coordinate.latitude
+        let longitude: Double = self.coordinate.longitude
+        return "{\(latitude),\(longitude)}"
     }
 }
