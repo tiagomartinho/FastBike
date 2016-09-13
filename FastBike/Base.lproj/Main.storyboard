@@ -19,10 +19,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FT5-3y-fKE"/>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuM-TR-eTK">
-                                <frame key="frameInset" minX="16" minY="37" width="22" height="22"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D8N-KV-mAm">
+                                <frame key="frameInset" minX="14" minY="29" width="34" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuM-TR-eTK">
+                                        <frame key="frameInset" minX="6" minY="6" width="22" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="2Y9-8R-Wjy">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="High Priority" translatesAutoresizingMaskIntoConstraints="NO" id="jrv-Af-va2"/>
@@ -35,29 +47,48 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-LF-A7O">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-ll-HXG">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="High Priority" translatesAutoresizingMaskIntoConstraints="NO" id="31A-tm-ZTN"/>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-yZ-Bsz">
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Bici"/>
-                                        <connections>
-                                            <action selector="findNearestBike" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7B-uO-YmO"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-LF-A7O">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicivuota" highlightedImage="bicipiena" translatesAutoresizingMaskIntoConstraints="NO" id="31A-tm-ZTN">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="AVM-Qh-zjH"/>
+                                                    <constraint firstAttribute="height" constant="50" id="frF-KC-fmr"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-yZ-Bsz">
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Bici"/>
+                                                <connections>
+                                                    <action selector="findNearestBike" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7B-uO-YmO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ase-LF-A7O" firstAttribute="top" secondItem="Lpd-ll-HXG" secondAttribute="top" constant="8" id="13a-pt-bx0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ase-LF-A7O" secondAttribute="trailing" constant="8" id="fQJ-PD-3DP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ase-LF-A7O" secondAttribute="bottom" constant="8" id="gyi-B0-Dny"/>
+                                    <constraint firstItem="Ase-LF-A7O" firstAttribute="leading" secondItem="Lpd-ll-HXG" secondAttribute="leading" constant="8" id="s0L-L6-R9R"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ase-LF-A7O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="5hu-F4-FGa"/>
-                            <constraint firstItem="Ase-LF-A7O" firstAttribute="height" secondItem="2Y9-8R-Wjy" secondAttribute="height" id="6Cu-Yh-iFf"/>
                             <constraint firstItem="FT5-3y-fKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OTG-0f-bPC"/>
                             <constraint firstItem="FT5-3y-fKE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Q7d-b8-oxs"/>
+                            <constraint firstItem="Lpd-ll-HXG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="R8g-zS-aSM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lpd-ll-HXG" secondAttribute="bottom" constant="30" id="aa8-cx-aNB"/>
                             <constraint firstAttribute="bottom" secondItem="2Y9-8R-Wjy" secondAttribute="bottom" constant="20" id="amM-Z8-SY6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FT5-3y-fKE" secondAttribute="bottom" id="bnL-YD-p4m"/>
-                            <constraint firstAttribute="bottom" secondItem="Ase-LF-A7O" secondAttribute="bottom" constant="20" id="gHF-Tx-O6e"/>
-                            <constraint firstItem="Ase-LF-A7O" firstAttribute="width" secondItem="2Y9-8R-Wjy" secondAttribute="width" id="gM8-hL-tCx"/>
                             <constraint firstAttribute="trailing" secondItem="FT5-3y-fKE" secondAttribute="trailing" id="ifm-uD-rh3"/>
                             <constraint firstAttribute="trailing" secondItem="2Y9-8R-Wjy" secondAttribute="trailing" constant="20" id="sul-tq-NtV"/>
                         </constraints>
@@ -73,5 +104,7 @@
     </scenes>
     <resources>
         <image name="High Priority" width="50" height="50"/>
+        <image name="bicipiena" width="512" height="512"/>
+        <image name="bicivuota" width="512" height="512"/>
     </resources>
 </document>
