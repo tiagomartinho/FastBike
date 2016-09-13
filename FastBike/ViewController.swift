@@ -1,15 +1,15 @@
 import UIKit
 import Gloss
-import CoreLocation
 import MapKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
 
     var bikeStations = [BikeStation]()
     var location: CLLocation?
+    var mapZoomSet = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,37 +47,5 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok...", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
-    }
-
-    func getUserPosition() {
-        locationManager.requestWhenInUseAuthorization()
-
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
-        }
-    }
-
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let coordinate = locations.last?.coordinate {
-            location = CLLocation(latitude: coordinate.latitude,
-                                longitude: coordinate.longitude)
-            setMapZoomIfNeeded(location: location!)
-        }
-    }
-
-    var mapZoomSet = false
-
-    func setMapZoomIfNeeded(location: CLLocation) {
-        if mapZoomSet { return }
-        mapZoomSet = true
-        let span = MKCoordinateSpanMake(0.05, 0.05)
-        let locationRegion = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
-        let region = MKCoordinateRegionMake(locationRegion, span)
-        mapView.setRegion(region, animated: false)
-    }
-
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
     }
 }
