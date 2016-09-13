@@ -19,15 +19,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     @IBAction func findNearestBikeStation() {
-        if let nearestBikeStation = getNearestBikeStation() {
-            print(nearestBikeStation)
+        if let nearestBikeStation = getNearestBikeStation(),
+            let userLocation = location {
+            let start = MKMapItem(placemark: MKPlacemark(coordinate: userLocation.coordinate))
+            let end = MKMapItem(placemark: MKPlacemark(coordinate: nearestBikeStation.location.coordinate))
+            MKMapItem.openMaps(with: [start, end], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
         } else {
-            let alert = UIAlertController(title: "Mi spiace 🤗",
-                                          message: "Stai senza bici 🏃🏻",
-                                          preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok...", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
+            showErrorAlert()
         }
+    }
+
+    func showErrorAlert() {
+        let alert = UIAlertController(title: "Mi spiace 🤗",
+                                      message: "Stai senza bici 🏃🏻",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok...", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 
     func getNearestBikeStation() -> BikeStation? {
@@ -56,9 +63,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     for bikeJSON in JSON {
                         let bikeStation = BikeStation(json: bikeJSON)
                         self.bikeStations.append(bikeStation)
-                        if let annotation = bikeStation as? MKAnnotation {
-                            self.mapView.addAnnotation(annotation)
-                        }
+                        self.mapView.addAnnotation(bikeStation)
                     }
                 }
             }
