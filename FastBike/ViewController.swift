@@ -48,7 +48,6 @@ class ViewController: UIViewController {
         let user = location?.stringValue() ?? ""
         let bike = bikeStation?.location.stringValue() ?? ""
         let label = "\(user) -> \(bike)"
-        print(label)
         Analytics.track(category: "Get Directions",
                         action: "Find Nearest \(action)",
                         label: label)
