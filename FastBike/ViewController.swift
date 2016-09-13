@@ -9,12 +9,18 @@ class ViewController: UIViewController {
     var bikeStations = [BikeStation]()
     var location: CLLocation?
     var mapZoomSet = false
+    @IBOutlet var reportButton: UIButton!
+    @IBOutlet var bikeButton: UIButton!
+    @IBOutlet var parkButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         getBikeStations()
         getUserPosition()
         Analytics.track(screen: "Main View")
+        reportButton.setImage(#imageLiteral(resourceName: "lavoripiena"), for: .highlighted)
+        bikeButton.setImage(#imageLiteral(resourceName: "bicipiena"), for: .highlighted)
+        parkButton.setImage(#imageLiteral(resourceName: "Parcheggiopiena"), for: .highlighted)
     }
 
     @IBAction func findNearestBike() {

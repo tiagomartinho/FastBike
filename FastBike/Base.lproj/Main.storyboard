@@ -19,49 +19,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FT5-3y-fKE"/>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D8N-KV-mAm">
-                                <frame key="frameInset" minX="14" minY="29" width="34" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8N-KV-mAm">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuM-TR-eTK">
-                                        <frame key="frameInset" minX="6" minY="6" width="22" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuM-TR-eTK">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="iKm-Es-sTj"/>
+                                            <constraint firstAttribute="width" constant="20" id="w06-3n-hui"/>
+                                        </constraints>
+                                        <state key="normal" image="lavorivuota"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="2nw-k8-bHv"/>
+                                    <constraint firstItem="AuM-TR-eTK" firstAttribute="centerY" secondItem="D8N-KV-mAm" secondAttribute="centerY" id="NfQ-P4-jd4"/>
+                                    <constraint firstAttribute="height" constant="34" id="R4o-9k-qzQ"/>
+                                    <constraint firstItem="AuM-TR-eTK" firstAttribute="centerX" secondItem="D8N-KV-mAm" secondAttribute="centerX" id="wm0-J6-TZa"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="2Y9-8R-Wjy">
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="High Priority" translatesAutoresizingMaskIntoConstraints="NO" id="jrv-Af-va2"/>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwt-vK-R66">
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Stazione"/>
-                                        <connections>
-                                            <action selector="findNearestStation" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dex-OB-Smr"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-ll-HXG">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-LF-A7O">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicivuota" highlightedImage="bicipiena" translatesAutoresizingMaskIntoConstraints="NO" id="31A-tm-ZTN">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYc-7p-2Go">
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="AVM-Qh-zjH"/>
-                                                    <constraint firstAttribute="height" constant="50" id="frF-KC-fmr"/>
+                                                    <constraint firstAttribute="height" constant="50" id="bVM-oG-fAr"/>
+                                                    <constraint firstAttribute="width" constant="50" id="cgc-YL-fQw"/>
                                                 </constraints>
-                                            </imageView>
+                                                <state key="normal" image="bicivuota"/>
+                                                <connections>
+                                                    <action selector="findNearestBike" destination="BYZ-38-t0r" eventType="touchUpInside" id="hca-Hc-kXf"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-yZ-Bsz">
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <state key="normal" title="Bici"/>
+                                                <state key="normal" title="Bici">
+                                                    <color key="titleColor" red="0.21568627450980393" green="0.63529411764705879" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="findNearestBike" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7B-uO-YmO"/>
+                                                    <action selector="findNearestBike" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIJ-aV-56v"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -80,31 +81,111 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdY-t4-02F">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="SYX-w5-ZxO">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpU-YD-fn9">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="7t1-wS-uNG"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Lwq-7h-V0V"/>
+                                                </constraints>
+                                                <state key="normal" image="Parcheggiovuota"/>
+                                                <connections>
+                                                    <action selector="findNearestStation" destination="BYZ-38-t0r" eventType="touchUpInside" id="Caj-G3-mhC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znw-wz-ynJ">
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Bici">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="findNearestStation" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bmi-zx-iGN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="SYX-w5-ZxO" firstAttribute="top" secondItem="fdY-t4-02F" secondAttribute="top" constant="8" id="0du-Zw-Eg7"/>
+                                    <constraint firstAttribute="bottom" secondItem="SYX-w5-ZxO" secondAttribute="bottom" constant="8" id="8DE-Xb-Zv2"/>
+                                    <constraint firstItem="SYX-w5-ZxO" firstAttribute="leading" secondItem="fdY-t4-02F" secondAttribute="leading" constant="8" id="OSM-xd-asY"/>
+                                    <constraint firstAttribute="trailing" secondItem="SYX-w5-ZxO" secondAttribute="trailing" constant="8" id="WNK-yB-qMq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fdY-t4-02F" secondAttribute="trailing" constant="20" id="L7g-Ir-7e8"/>
                             <constraint firstItem="FT5-3y-fKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OTG-0f-bPC"/>
                             <constraint firstItem="FT5-3y-fKE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Q7d-b8-oxs"/>
+                            <constraint firstItem="D8N-KV-mAm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="14" id="QjD-Bd-ITc"/>
                             <constraint firstItem="Lpd-ll-HXG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="R8g-zS-aSM"/>
+                            <constraint firstItem="D8N-KV-mAm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="9" id="WEy-CE-RTO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lpd-ll-HXG" secondAttribute="bottom" constant="30" id="aa8-cx-aNB"/>
-                            <constraint firstAttribute="bottom" secondItem="2Y9-8R-Wjy" secondAttribute="bottom" constant="20" id="amM-Z8-SY6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FT5-3y-fKE" secondAttribute="bottom" id="bnL-YD-p4m"/>
                             <constraint firstAttribute="trailing" secondItem="FT5-3y-fKE" secondAttribute="trailing" id="ifm-uD-rh3"/>
-                            <constraint firstAttribute="trailing" secondItem="2Y9-8R-Wjy" secondAttribute="trailing" constant="20" id="sul-tq-NtV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fdY-t4-02F" secondAttribute="bottom" constant="30" id="tf8-rf-fSy"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bikeButton" destination="NYc-7p-2Go" id="ANA-7K-bog"/>
                         <outlet property="mapView" destination="FT5-3y-fKE" id="vYd-nd-Mwy"/>
+                        <outlet property="parkButton" destination="rpU-YD-fn9" id="kIc-Jg-YnR"/>
+                        <outlet property="reportButton" destination="AuM-TR-eTK" id="bC8-LX-ClQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="jix-pZ-4gs">
+                    <rect key="frame" x="0.0" y="0.0" width="66" height="87"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="hIS-ew-yfY">
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicivuota" highlightedImage="bicipiena" translatesAutoresizingMaskIntoConstraints="NO" id="jB6-E9-Z7Q">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="TG4-mT-5tv"/>
+                                        <constraint firstAttribute="height" constant="50" id="lRn-pw-QOI"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vT4-nC-hIA">
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="Bici"/>
+                                    <connections>
+                                        <action selector="findNearestBike" destination="BYZ-38-t0r" eventType="touchUpInside" id="E9Y-6v-QRl"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="hIS-ew-yfY" firstAttribute="leading" secondItem="jix-pZ-4gs" secondAttribute="leading" constant="8" id="Fzw-mf-Bam"/>
+                        <constraint firstAttribute="trailing" secondItem="hIS-ew-yfY" secondAttribute="trailing" constant="8" id="P8G-Bi-oBB"/>
+                        <constraint firstAttribute="bottom" secondItem="hIS-ew-yfY" secondAttribute="bottom" constant="8" id="iuu-Sm-7xW"/>
+                        <constraint firstItem="hIS-ew-yfY" firstAttribute="top" secondItem="jix-pZ-4gs" secondAttribute="top" constant="8" id="kVF-7M-oYY"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
-        <image name="High Priority" width="50" height="50"/>
-        <image name="bicipiena" width="512" height="512"/>
-        <image name="bicivuota" width="512" height="512"/>
+        <image name="Parcheggiovuota" width="125" height="125"/>
+        <image name="bicipiena" width="125" height="125"/>
+        <image name="bicivuota" width="125" height="125"/>
+        <image name="lavorivuota" width="125" height="125"/>
     </resources>
 </document>
