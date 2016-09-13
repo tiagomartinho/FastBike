@@ -20,6 +20,7 @@
                                 <action selector="findNearestStation" destination="AgC-eL-Hgc" id="iK2-B8-VmT"/>
                             </connections>
                         </button>
+                        <map height="200" alignment="left" id="b1e-N5-Hyg"/>
                     </items>
                 </controller>
             </objects>

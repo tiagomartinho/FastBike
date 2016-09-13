@@ -25,6 +25,7 @@
 		EA04C8551D88894000C98C41 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8541D88894000C98C41 /* ComplicationController.swift */; };
 		EA04C8571D88894000C98C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA04C8561D88894000C98C41 /* Assets.xcassets */; };
 		EA04C85B1D88894000C98C41 /* FastBikeWatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EA04C83F1D88894000C98C41 /* FastBikeWatchOS.app */; };
+		EA04C8651D88968600C98C41 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA04C8641D88968600C98C41 /* MapKit.framework */; };
 		EA2840CA1D88159000BCE287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840C91D88159000BCE287 /* AppDelegate.swift */; };
 		EA2840CC1D88159000BCE287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840CB1D88159000BCE287 /* ViewController.swift */; };
 		EA2840CF1D88159000BCE287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2840CD1D88159000BCE287 /* Main.storyboard */; };
@@ -114,6 +115,7 @@
 		EA04C8541D88894000C98C41 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		EA04C8561D88894000C98C41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA04C8581D88894000C98C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA04C8641D88968600C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		EA2840C61D88159000BCE287 /* FastBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2840C91D88159000BCE287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA2840CB1D88159000BCE287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA04C8651D88968600C98C41 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +169,7 @@
 		8D9AAC3DA767BC4862B5ACE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA04C8641D88968600C98C41 /* MapKit.framework */,
 				EA04C82A1D8839FB00C98C41 /* MapKit.framework */,
 				23C2732D8089FB23A62DEB82 /* Pods_FastBike.framework */,
 			);
@@ -391,6 +395,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4C34FT6ABU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EA2840C51D88159000BCE287 = {
 						CreatedOnToolsVersion = 8.0;

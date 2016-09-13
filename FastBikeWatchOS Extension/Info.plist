@@ -6,6 +6,17 @@
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>FastBikeWatchOS Extension</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>MKDirectionsRequest</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.maps.directionsrequest</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -31,6 +42,11 @@
 		<string>CLKComplicationFamilyUtilitarianLarge</string>
 		<string>CLKComplicationFamilyCircularSmall</string>
 		<string>CLKComplicationFamilyExtraLarge</string>
+	</array>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array>
+		<string>MKDirectionsModeCar</string>
+		<string>MKDirectionsModePedestrian</string>
 	</array>
 	<key>NSExtension</key>
 	<dict>
