@@ -14,6 +14,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         getBikeStations()
         getUserPosition()
+        trackScreen()
+    }
+
+    func trackScreen() {
+        let tracker = GAI.sharedInstance().defaultTracker
+        tracker?.set(kGAIScreenName, value: "Main View")
+        let builder = GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject]
+        tracker?.send(builder)
     }
 
     @IBAction func findNearestBike() {
