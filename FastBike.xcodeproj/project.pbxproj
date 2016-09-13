@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E6C5A7A11BB13402FDDA3C8 /* Pods_FastBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2732D8089FB23A62DEB82 /* Pods_FastBike.framework */; };
+		EA04C82B1D8839FB00C98C41 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA04C82A1D8839FB00C98C41 /* MapKit.framework */; };
 		EA2840CA1D88159000BCE287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840C91D88159000BCE287 /* AppDelegate.swift */; };
 		EA2840CC1D88159000BCE287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840CB1D88159000BCE287 /* ViewController.swift */; };
 		EA2840CF1D88159000BCE287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2840CD1D88159000BCE287 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		23C2732D8089FB23A62DEB82 /* Pods_FastBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57168AAB990EB3B81D8148EB /* Pods-FastBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastBike/Pods-FastBike.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B6543F990C62229A89BD07 /* Pods-FastBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastBike/Pods-FastBike.release.xcconfig"; sourceTree = "<group>"; };
+		EA04C82A1D8839FB00C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA2840C61D88159000BCE287 /* FastBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2840C91D88159000BCE287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA2840CB1D88159000BCE287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA04C82B1D8839FB00C98C41 /* MapKit.framework in Frameworks */,
 				1E6C5A7A11BB13402FDDA3C8 /* Pods_FastBike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +87,7 @@
 		8D9AAC3DA767BC4862B5ACE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA04C82A1D8839FB00C98C41 /* MapKit.framework */,
 				23C2732D8089FB23A62DEB82 /* Pods_FastBike.framework */,
 			);
 			name = Frameworks;
@@ -233,6 +237,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4C34FT6ABU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EA2840D91D88159000BCE287 = {
 						CreatedOnToolsVersion = 8.0;

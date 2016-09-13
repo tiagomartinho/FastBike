@@ -1,11 +1,12 @@
 import UIKit
-
 import Alamofire
 import Gloss
 import CoreLocation
+import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
 
     var bikeStations = [BikeStation]()
@@ -53,7 +54,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             Alamofire.request(url, method: .get).responseJSON { response in
                 if let JSON = response.result.value as? [Gloss.JSON] {
                     for bikeJSON in JSON {
-                        self.bikeStations.append(BikeStation(json: bikeJSON))
+                        let bikeStation = BikeStation(json: bikeJSON)
+                        self.bikeStations.append(bikeStation)
+                        if let annotation = bikeStation as? MKAnnotation {
+                            self.mapView.addAnnotation(annotation)
+                        }
                     }
                 }
             }
@@ -74,7 +79,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if let coordinate = locations.last?.coordinate {
             location = CLLocation(latitude: coordinate.latitude,
                                 longitude: coordinate.longitude)
+            setMapZoomIfNeeded(location: location!)
         }
+    }
+
+    var mapZoomSet = false
+
+    func setMapZoomIfNeeded(location: CLLocation) {
+        if mapZoomSet { return }
+        mapZoomSet = true
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let locationRegion = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        let region = MKCoordinateRegionMake(locationRegion, span)
+        mapView.setRegion(region, animated: false)
     }
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

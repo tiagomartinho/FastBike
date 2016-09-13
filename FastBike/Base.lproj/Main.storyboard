@@ -18,6 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FT5-3y-fKE"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBi-ih-x8p">
                                 <state key="normal" title="Bici più vicina"/>
                                 <connections>
@@ -27,13 +28,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zBi-ih-x8p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4mk-Wy-VHn"/>
-                            <constraint firstItem="zBi-ih-x8p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lye-Kk-sur"/>
+                            <constraint firstItem="zBi-ih-x8p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="16l-fx-BFV"/>
+                            <constraint firstItem="FT5-3y-fKE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Cb-rS-krv"/>
+                            <constraint firstAttribute="trailing" secondItem="FT5-3y-fKE" secondAttribute="trailing" id="a64-GR-puH"/>
+                            <constraint firstItem="FT5-3y-fKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a7K-JF-Ae0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zBi-ih-x8p" secondAttribute="bottom" constant="20" id="gEc-OW-hqR"/>
+                            <constraint firstItem="zBi-ih-x8p" firstAttribute="top" secondItem="FT5-3y-fKE" secondAttribute="bottom" constant="8" id="gQy-ys-bIo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="FT5-3y-fKE" id="vYd-nd-Mwy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
