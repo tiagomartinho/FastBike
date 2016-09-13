@@ -58,7 +58,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         if annotation is BikeStation {
             let annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "BikeStation")
             annotationView.canShowCallout = true
-            // MARK: qui
+            annotationView.pinTintColor = #colorLiteral(red: 0.1568627451, green: 0.8039215686, blue: 0.9843137255, alpha: 1)
             annotationView.rightCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
             return annotationView
         } else {
