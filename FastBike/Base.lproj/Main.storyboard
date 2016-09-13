@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,29 +19,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FT5-3y-fKE"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwt-vK-R66">
-                                <color key="backgroundColor" red="0.094117647060000004" green="0.75294117650000003" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4u-RD-tAl">
-                                <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuM-TR-eTK">
                                 <frame key="frameInset" minX="16" minY="37" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="2Y9-8R-Wjy">
+                                <frame key="frameInset" minX="309" minY="588" width="50" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="High Priority" translatesAutoresizingMaskIntoConstraints="NO" id="jrv-Af-va2">
+                                        <frame key="frameInset" width="50" height="50"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwt-vK-R66">
+                                        <frame key="frameInset" minY="42" width="50" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-LF-A7O">
+                                <frame key="frameInset" minX="16" minY="588" width="50" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="High Priority" translatesAutoresizingMaskIntoConstraints="NO" id="31A-tm-ZTN">
+                                        <frame key="frameInset" width="50" height="50"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-yZ-Bsz">
+                                        <frame key="frameInset" minY="42" width="50" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FT5-3y-fKE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9Rw-EW-XvR"/>
-                            <constraint firstItem="E4u-RD-tAl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H9U-8J-9gS"/>
                             <constraint firstItem="FT5-3y-fKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OTG-0f-bPC"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E4u-RD-tAl" secondAttribute="bottom" constant="20" id="aHE-2e-AhX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FT5-3y-fKE" secondAttribute="bottom" id="bnL-YD-p4m"/>
                             <constraint firstAttribute="trailing" secondItem="FT5-3y-fKE" secondAttribute="trailing" id="ifm-uD-rh3"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pwt-vK-R66" secondAttribute="bottom" constant="20" id="o5k-fp-s6e"/>
-                            <constraint firstItem="pwt-vK-R66" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xgz-3P-ogG"/>
                         </constraints>
                     </view>
                     <connections>
@@ -54,4 +69,7 @@
             <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="High Priority" width="50" height="50"/>
+    </resources>
 </document>
