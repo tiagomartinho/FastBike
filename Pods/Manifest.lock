@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.0.0)
+  - Gloss (0.7.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Gloss (from `https://github.com/hkellaway/Gloss`, branch `swift_3.0`)
+
+EXTERNAL SOURCES:
+  Gloss:
+    :branch: swift_3.0
+    :git: https://github.com/hkellaway/Gloss
+
+CHECKOUT OPTIONS:
+  Gloss:
+    :commit: 145c78888ccca678bf146b5b0b58882016a4d9aa
+    :git: https://github.com/hkellaway/Gloss
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  Gloss: d86009ef4d12c221d889c4e3f9e1eb547ee6251d
+
+PODFILE CHECKSUM: c8c4e48e77291eadac121d9d9c5c67cc058c9a09
+
+COCOAPODS: 1.0.0

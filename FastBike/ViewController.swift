@@ -1,25 +1,26 @@
-//
-//  ViewController.swift
-//  FastBike
-//
-//  Created by Tiago Martinho on 13/09/16.
-//  Copyright © 2016 tm. All rights reserved.
-//
-
 import UIKit
+
+import Alamofire
+import Gloss
 
 class ViewController: UIViewController {
 
+    var bikeStations = [BikeStation]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        getBikeStations()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func getBikeStations() {
+        if let url = URL(string: "https://dev.smartcommunitylab.it/core.mobility/bikesharing/trento") {
+            Alamofire.request(url, method: .get).responseJSON { response in
+                if let JSON = response.result.value as? [Gloss.JSON] {
+                    for bikeJSON in JSON {
+                        self.bikeStations.append(BikeStation(json: bikeJSON))
+                    }
+                }
+            }
+        }
     }
-
-
 }
-
