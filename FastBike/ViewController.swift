@@ -59,7 +59,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
             let annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "BikeStation")
             annotationView.canShowCallout = true
             annotationView.pinTintColor = #colorLiteral(red: 0.1568627451, green: 0.8039215686, blue: 0.9843137255, alpha: 1)
-            annotationView.rightCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
+            let button = UIButton(type: .detailDisclosure)
+            button.setImage(#imageLiteral(resourceName: "freccetta"), for: .normal)
+            button.setImage(#imageLiteral(resourceName: "freccetta"), for: .highlighted)
+            annotationView.rightCalloutAccessoryView = button
             return annotationView
         } else {
             return nil
