@@ -22,6 +22,16 @@ class BikeStation: NSObject, Decodable {
         self.location = CLLocation(latitude: positionArray[0],
                                    longitude: positionArray[1])
     }
+    
+    init(name: String, address: String, id: String, bikes: Int, slots: Int, totalSlots: Int, location: CLLocation) {
+        self.name = name
+        self.address = address
+        self.id = id
+        self.bikes = bikes
+        self.slots = slots
+        self.totalSlots = totalSlots
+        self.location = location
+    }
 }
 
 extension BikeStation: MKAnnotation {
