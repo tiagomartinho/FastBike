@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBAction func findNearestBike() {
         if let nearestBike = BikeStationFinder.nearestBike(location: location, bikeStations: bikeStations),
             let userLocation = location {
-            openMaps(start: userLocation, end: nearestBike.location)
+            MapUtilities.open(start: userLocation, end: nearestBike.location)
         } else {
             AlertUtilities.showErrorAlert(viewController: self)
         }
@@ -30,15 +30,9 @@ class ViewController: UIViewController {
     @IBAction func findNearestStation() {
         if let nearestStation = BikeStationFinder.nearestStation(location: location, bikeStations: bikeStations),
             let userLocation = location {
-            openMaps(start: userLocation, end: nearestStation.location)
+            MapUtilities.open(start: userLocation, end: nearestStation.location)
         } else {
             AlertUtilities.showErrorAlert(viewController: self)
         }
-    }
-
-    func openMaps(start: CLLocation, end: CLLocation) {
-        let start = MKMapItem(placemark: MKPlacemark(coordinate: start.coordinate))
-        let end = MKMapItem(placemark: MKPlacemark(coordinate: end.coordinate))
-        MKMapItem.openMaps(with: [start, end], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
     }
 }
