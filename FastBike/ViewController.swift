@@ -18,11 +18,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         getUserPosition()
     }
 
-    @IBAction func findNearestBikeStation() {
-        if let nearestBikeStation = getNearestBikeStation(),
+    @IBAction func findNearestBike() {
+        if let nearestBike = BikeStationFinder.nearestBike(location: location, bikeStations: bikeStations),
             let userLocation = location {
             let start = MKMapItem(placemark: MKPlacemark(coordinate: userLocation.coordinate))
-            let end = MKMapItem(placemark: MKPlacemark(coordinate: nearestBikeStation.location.coordinate))
+            let end = MKMapItem(placemark: MKPlacemark(coordinate: nearestBike.location.coordinate))
+            MKMapItem.openMaps(with: [start, end], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
+        } else {
+            showErrorAlert()
+        }
+    }
+
+    @IBAction func findNearestStation() {
+        if let nearestStation = BikeStationFinder.nearestStation(location: location, bikeStations: bikeStations),
+            let userLocation = location {
+            let start = MKMapItem(placemark: MKPlacemark(coordinate: userLocation.coordinate))
+            let end = MKMapItem(placemark: MKPlacemark(coordinate: nearestStation.location.coordinate))
             MKMapItem.openMaps(with: [start, end], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
         } else {
             showErrorAlert()
@@ -35,25 +46,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok...", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
-    }
-
-    func getNearestBikeStation() -> BikeStation? {
-        guard let location = location else { return nil }
-        var nearestBikeStation: BikeStation?
-        for bikeStation in bikeStations {
-            if bikeStation.bikes > 0 {
-                if nearestBikeStation == nil {
-                    nearestBikeStation = bikeStation
-                } else {
-                    let distance = location.distance(from: bikeStation.location)
-                    let nearestBikeStationDistance = location.distance(from: nearestBikeStation!.location)
-                    if distance < nearestBikeStationDistance {
-                        nearestBikeStation = bikeStation
-                    }
-                }
-            }
-        }
-        return nearestBikeStation
     }
 
     func getBikeStations() {
