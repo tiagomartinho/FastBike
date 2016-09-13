@@ -10,18 +10,21 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FastBikeWatchOS" customModuleProvider="target">
                     <items>
-                        <button width="1" height="70" alignment="left" title="Trova Bici" id="Bhf-s7-eBp">
+                        <button width="1" height="65" alignment="left" title="Trova Bici" id="Bhf-s7-eBp">
                             <connections>
                                 <action selector="findNearestBike" destination="AgC-eL-Hgc" id="sn5-h3-ICH"/>
                             </connections>
                         </button>
-                        <button width="1" height="70" alignment="left" title="Trova Stazione" id="bOx-z8-NjQ">
+                        <button width="1" height="65" alignment="left" title="Parcheggia Bici" id="bOx-z8-NjQ">
                             <connections>
                                 <action selector="findNearestStation" destination="AgC-eL-Hgc" id="iK2-B8-VmT"/>
                             </connections>
                         </button>
                         <map height="200" alignment="left" id="b1e-N5-Hyg"/>
                     </items>
+                    <connections>
+                        <outlet property="mapView" destination="b1e-N5-Hyg" id="b67-f1-kUl"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>

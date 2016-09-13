@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18015BE0663768044B9A0C7F74EF685F"
-               BuildableName = "Pods_FastBike.framework"
-               BlueprintName = "Pods-FastBike"
+               BlueprintIdentifier = "21B72ED5B31D17659ADA8325B141026B"
+               BuildableName = "Gloss.framework"
+               BlueprintName = "Gloss-watchOS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18015BE0663768044B9A0C7F74EF685F"
-            BuildableName = "Pods_FastBike.framework"
-            BlueprintName = "Pods-FastBike"
+            BlueprintIdentifier = "21B72ED5B31D17659ADA8325B141026B"
+            BuildableName = "Gloss.framework"
+            BlueprintName = "Gloss-watchOS"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
