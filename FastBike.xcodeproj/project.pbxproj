@@ -388,12 +388,12 @@
 				TargetAttributes = {
 					EA04C83E1D88894000C98C41 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4C34FT6ABU;
+						DevelopmentTeam = NX6S46A5Z4;
 						ProvisioningStyle = Automatic;
 					};
 					EA04C84A1D88894000C98C41 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4C34FT6ABU;
+						DevelopmentTeam = NX6S46A5Z4;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -414,13 +414,13 @@
 					};
 					EA2840D91D88159000BCE287 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4C34FT6ABU;
+						DevelopmentTeam = NX6S46A5Z4;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EA2840C51D88159000BCE287;
 					};
 					EA2840E41D88159000BCE287 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4C34FT6ABU;
+						DevelopmentTeam = NX6S46A5Z4;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EA2840C51D88159000BCE287;
 					};
@@ -642,7 +642,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = NX6S46A5Z4;
 				IBSC_MODULE = FastBikeWatchOS_Extension;
 				INFOPLIST_FILE = FastBikeWatchOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp;
@@ -660,7 +660,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = NX6S46A5Z4;
 				IBSC_MODULE = FastBikeWatchOS_Extension;
 				INFOPLIST_FILE = FastBikeWatchOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp;
@@ -677,7 +677,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = NX6S46A5Z4;
 				INFOPLIST_FILE = "FastBikeWatchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp.watchkitextension;
@@ -694,7 +694,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = NX6S46A5Z4;
 				INFOPLIST_FILE = "FastBikeWatchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp.watchkitextension;
@@ -842,7 +842,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = NX6S46A5Z4;
 				INFOPLIST_FILE = FastBikeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBikeTests;
@@ -857,7 +857,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = NX6S46A5Z4;
 				INFOPLIST_FILE = FastBikeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBikeTests;
@@ -871,7 +871,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = NX6S46A5Z4;
 				INFOPLIST_FILE = FastBikeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBikeUITests;
@@ -885,7 +885,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DEVELOPMENT_TEAM = NX6S46A5Z4;
 				INFOPLIST_FILE = FastBikeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBikeUITests;
