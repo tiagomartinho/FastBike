@@ -5,9 +5,7 @@ import MapKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
-
     let locationManager = CLLocationManager()
-
     var bikeStations = [BikeStation]()
     var location: CLLocation?
     var mapZoomSet = false
@@ -19,18 +17,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func findNearestBike() {
-        if let nearestBike = BikeStationFinder.nearestBike(location: location, bikeStations: bikeStations),
-            let userLocation = location {
-            MapUtilities.open(start: userLocation, end: nearestBike.location)
-        } else {
-            AlertUtilities.showErrorAlert(viewController: self)
-        }
+        let nearestBike = BikeStationFinder.nearestBike(location: location, bikeStations: bikeStations)
+        openMaps(destination: nearestBike)
     }
 
     @IBAction func findNearestStation() {
-        if let nearestStation = BikeStationFinder.nearestStation(location: location, bikeStations: bikeStations),
-            let userLocation = location {
-            MapUtilities.open(start: userLocation, end: nearestStation.location)
+        let nearestStation = BikeStationFinder.nearestStation(location: location, bikeStations: bikeStations)
+        openMaps(destination: nearestStation)
+    }
+
+    func openMaps(destination: BikeStation?) {
+        if let nearestBikelocation = destination?.location,
+        let userLocation = location {
+            MapUtilities.open(start: userLocation, end: nearestBikelocation)
         } else {
             AlertUtilities.showErrorAlert(viewController: self)
         }
