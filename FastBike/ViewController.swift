@@ -2,7 +2,7 @@ import UIKit
 import Gloss
 import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
@@ -15,6 +15,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.delegate = self
         getBikeStations()
         getUserPosition()
         Analytics.track(screen: "Main View")
@@ -51,6 +52,21 @@ class ViewController: UIViewController {
         Analytics.track(category: "Get Directions",
                         action: "Find Nearest \(action)",
                         label: label)
+    }
+
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is BikeStation {
+            let annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "BikeStation")
+            annotationView.canShowCallout = true
+            annotationView.rightCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
+            return annotationView
+        } else {
+            return nil
+        }
+    }
+
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        openMaps(destination: view.annotation as? BikeStation)
     }
 }
 
