@@ -23,41 +23,37 @@
                                 <frame key="frameInset" minX="16" minY="37" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="2Y9-8R-Wjy">
-                                <frame key="frameInset" minX="309" minY="588" width="50" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="2Y9-8R-Wjy">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="High Priority" translatesAutoresizingMaskIntoConstraints="NO" id="jrv-Af-va2">
-                                        <frame key="frameInset" width="50" height="50"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwt-vK-R66">
-                                        <frame key="frameInset" minY="42" width="50" height="29"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="High Priority" translatesAutoresizingMaskIntoConstraints="NO" id="jrv-Af-va2"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwt-vK-R66">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Stazione"/>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-LF-A7O">
-                                <frame key="frameInset" minX="16" minY="588" width="50" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-LF-A7O">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="High Priority" translatesAutoresizingMaskIntoConstraints="NO" id="31A-tm-ZTN">
-                                        <frame key="frameInset" width="50" height="50"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-yZ-Bsz">
-                                        <frame key="frameInset" minY="42" width="50" height="29"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="High Priority" translatesAutoresizingMaskIntoConstraints="NO" id="31A-tm-ZTN"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-yZ-Bsz">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Bici"/>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FT5-3y-fKE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9Rw-EW-XvR"/>
+                            <constraint firstItem="Ase-LF-A7O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="5hu-F4-FGa"/>
+                            <constraint firstItem="Ase-LF-A7O" firstAttribute="height" secondItem="2Y9-8R-Wjy" secondAttribute="height" id="6Cu-Yh-iFf"/>
                             <constraint firstItem="FT5-3y-fKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OTG-0f-bPC"/>
+                            <constraint firstItem="FT5-3y-fKE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Q7d-b8-oxs"/>
+                            <constraint firstAttribute="bottom" secondItem="2Y9-8R-Wjy" secondAttribute="bottom" constant="20" id="amM-Z8-SY6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FT5-3y-fKE" secondAttribute="bottom" id="bnL-YD-p4m"/>
+                            <constraint firstAttribute="bottom" secondItem="Ase-LF-A7O" secondAttribute="bottom" constant="20" id="gHF-Tx-O6e"/>
+                            <constraint firstItem="Ase-LF-A7O" firstAttribute="width" secondItem="2Y9-8R-Wjy" secondAttribute="width" id="gM8-hL-tCx"/>
                             <constraint firstAttribute="trailing" secondItem="FT5-3y-fKE" secondAttribute="trailing" id="ifm-uD-rh3"/>
+                            <constraint firstAttribute="trailing" secondItem="2Y9-8R-Wjy" secondAttribute="trailing" constant="20" id="sul-tq-NtV"/>
                         </constraints>
                     </view>
                     <connections>
