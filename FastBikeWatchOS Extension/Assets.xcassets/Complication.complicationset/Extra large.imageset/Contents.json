@@ -2,13 +2,13 @@
   "images" : [
     {
       "idiom" : "watch",
-      "filename" : "bici_utility.png",
+      "filename" : "bici_XL.png",
       "screen-width" : "<=145",
       "scale" : "2x"
     },
     {
       "idiom" : "watch",
-      "filename" : "bici42_utility.png",
+      "filename" : "bici42_XL.png",
       "screen-width" : ">145",
       "scale" : "2x"
     }

@@ -394,7 +394,7 @@
 					};
 					EA2840C51D88159000BCE287 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = NX6S46A5Z4;
+						DevelopmentTeam = 4C34FT6ABU;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -800,7 +800,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = FastBike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike;
@@ -818,7 +818,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = FastBike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike;
@@ -896,6 +896,7 @@
 				EA04C85F1D88894000C98C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA04C8621D88894000C98C41 /* Build configuration list for PBXNativeTarget "FastBikeWatchOS" */ = {
 			isa = XCConfigurationList;
@@ -904,6 +905,7 @@
 				EA04C85D1D88894000C98C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA2840C11D88159000BCE287 /* Build configuration list for PBXProject "FastBike" */ = {
 			isa = XCConfigurationList;

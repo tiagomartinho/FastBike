@@ -6,6 +6,9 @@
       "role" : "circular"
     },
     {
+      "filename" : "Extra large.imageset"
+    },
+    {
       "idiom" : "watch",
       "filename" : "Modular.imageset",
       "role" : "modular"
