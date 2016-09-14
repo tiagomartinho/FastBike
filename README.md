@@ -2,6 +2,8 @@
 
 iOS and watchOS application to check the nearest bike and stations for the bike sharing service of the city of Trento.
 
+You can check the speaker deck at https://speakerdeck.com/tiagomartinho/fastbike#
+
 ## Requirements
 
 For the iOS/watchOS application:
