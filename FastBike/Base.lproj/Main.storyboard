@@ -24,8 +24,8 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuM-TR-eTK">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="iKm-Es-sTj"/>
-                                            <constraint firstAttribute="width" constant="20" id="w06-3n-hui"/>
+                                            <constraint firstAttribute="height" constant="40" id="iKm-Es-sTj"/>
+                                            <constraint firstAttribute="width" constant="40" id="w06-3n-hui"/>
                                         </constraints>
                                         <state key="normal" image="lavorivuota"/>
                                         <connections>
@@ -35,9 +35,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="34" id="2nw-k8-bHv"/>
+                                    <constraint firstAttribute="width" constant="54" id="2nw-k8-bHv"/>
                                     <constraint firstItem="AuM-TR-eTK" firstAttribute="centerY" secondItem="D8N-KV-mAm" secondAttribute="centerY" id="NfQ-P4-jd4"/>
-                                    <constraint firstAttribute="height" constant="34" id="R4o-9k-qzQ"/>
+                                    <constraint firstAttribute="height" constant="54" id="R4o-9k-qzQ"/>
                                     <constraint firstItem="AuM-TR-eTK" firstAttribute="centerX" secondItem="D8N-KV-mAm" secondAttribute="centerX" id="wm0-J6-TZa"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -211,9 +211,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="9cI-7S-g4d" secondAttribute="trailing" constant="20" id="Bkm-Aq-1s5"/>
-                                                <constraint firstItem="9cI-7S-g4d" firstAttribute="top" secondItem="3N2-BF-l3g" secondAttribute="top" constant="20" symbolic="YES" id="RPM-zf-ALs"/>
+                                                <constraint firstItem="9cI-7S-g4d" firstAttribute="top" secondItem="3N2-BF-l3g" secondAttribute="top" id="RPM-zf-ALs"/>
                                                 <constraint firstItem="9cI-7S-g4d" firstAttribute="leading" secondItem="3N2-BF-l3g" secondAttribute="leading" constant="20" id="VQS-Ax-v3Q"/>
-                                                <constraint firstAttribute="bottom" secondItem="9cI-7S-g4d" secondAttribute="bottom" constant="20" symbolic="YES" id="WZu-4m-GNU"/>
+                                                <constraint firstAttribute="bottom" secondItem="9cI-7S-g4d" secondAttribute="bottom" id="WZu-4m-GNU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -221,11 +221,11 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Foto" id="5vs-0T-HKu">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="h3U-dm-Cr4">
-                                        <rect key="frame" x="0.0" y="221" width="375" height="300"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="h3U-dm-Cr4">
+                                        <rect key="frame" x="0.0" y="221" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h3U-dm-Cr4" id="Onh-RM-Qn6">
-                                            <frame key="frameInset" width="375" height="299"/>
+                                            <frame key="frameInset" width="375" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="400" verticalCompressionResistancePriority="900" translatesAutoresizingMaskIntoConstraints="NO" id="jdz-Kt-ATX"/>
@@ -304,7 +304,7 @@
         <image name="Parcheggiovuota" width="125" height="125"/>
         <image name="bicipiena" width="125" height="125"/>
         <image name="bicivuota" width="125" height="125"/>
-        <image name="camera" width="81" height="66"/>
+        <image name="camera" width="54" height="44"/>
         <image name="lavorivuota" width="125" height="125"/>
     </resources>
 </document>
