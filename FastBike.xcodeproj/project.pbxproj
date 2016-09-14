@@ -32,6 +32,7 @@
 		EA04C8681D889B6000C98C41 /* MapsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8341D88559900C98C41 /* MapsUtilities.swift */; };
 		EA04C86B1D889C0A00C98C41 /* InterfaceController+CLManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C86A1D889C0A00C98C41 /* InterfaceController+CLManagerDelegate.swift */; };
 		EA04C86D1D889C7400C98C41 /* AlertUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C86C1D889C7400C98C41 /* AlertUtilities.swift */; };
+		EA2037B41D8943B70043DA05 /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2037B31D8943B70043DA05 /* ReportController.swift */; };
 		EA2840CA1D88159000BCE287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840C91D88159000BCE287 /* AppDelegate.swift */; };
 		EA2840CC1D88159000BCE287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840CB1D88159000BCE287 /* ViewController.swift */; };
 		EA2840CF1D88159000BCE287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2840CD1D88159000BCE287 /* Main.storyboard */; };
@@ -128,6 +129,7 @@
 		EA04C8641D88968600C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		EA04C86A1D889C0A00C98C41 /* InterfaceController+CLManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InterfaceController+CLManagerDelegate.swift"; sourceTree = "<group>"; };
 		EA04C86C1D889C7400C98C41 /* AlertUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtilities.swift; sourceTree = "<group>"; };
+		EA2037B31D8943B70043DA05 /* ReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportController.swift; sourceTree = "<group>"; };
 		EA2840C61D88159000BCE287 /* FastBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2840C91D88159000BCE287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA2840CB1D88159000BCE287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				EA04C8341D88559900C98C41 /* MapsUtilities.swift */,
 				EA04C83B1D887BDC00C98C41 /* Analytics.swift */,
 				EAC6A2F61D8825990035A62A /* Supporting Files */,
+				EA2037B31D8943B70043DA05 /* ReportController.swift */,
 			);
 			path = FastBike;
 			sourceTree = "<group>";
@@ -418,12 +421,12 @@
 				TargetAttributes = {
 					EA04C83E1D88894000C98C41 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = NX6S46A5Z4;
+						DevelopmentTeam = 4C34FT6ABU;
 						ProvisioningStyle = Automatic;
 					};
 					EA04C84A1D88894000C98C41 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = NX6S46A5Z4;
+						DevelopmentTeam = 4C34FT6ABU;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -433,7 +436,7 @@
 					};
 					EA2840C51D88159000BCE287 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = NX6S46A5Z4;
+						DevelopmentTeam = 4C34FT6ABU;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -645,6 +648,7 @@
 				EAC6A2F31D88255A0035A62A /* BikeStation.swift in Sources */,
 				EA04C82D1D884FB800C98C41 /* BikeStationFinder.swift in Sources */,
 				EA04C83C1D887BDC00C98C41 /* Analytics.swift in Sources */,
+				EA2037B41D8943B70043DA05 /* ReportController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,7 +726,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				IBSC_MODULE = FastBikeWatchOS_Extension;
 				INFOPLIST_FILE = FastBikeWatchOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp;
@@ -740,7 +744,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				IBSC_MODULE = FastBikeWatchOS_Extension;
 				INFOPLIST_FILE = FastBikeWatchOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp;
@@ -758,7 +762,7 @@
 			baseConfigurationReference = A78BCCE5213CE890421C58E4 /* Pods-FastBikeWatchOS Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = "FastBikeWatchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp.watchkitextension;
@@ -776,7 +780,7 @@
 			baseConfigurationReference = 1C88D789DEBA675A9099E7DD /* Pods-FastBikeWatchOS Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = "FastBikeWatchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp.watchkitextension;
@@ -891,7 +895,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = FastBike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike;
@@ -909,7 +913,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = FastBike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike;
