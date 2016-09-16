@@ -16,20 +16,9 @@ class BikeStationFinder {
                         bikeStations: [BikeStation],
                         condition: ((BikeStation) -> Bool)) -> BikeStation? {
         guard let location = location else { return nil }
-        var nearestBikeStation: BikeStation?
-        for bikeStation in bikeStations {
-            if condition(bikeStation) {
-                if nearestBikeStation == nil {
-                    nearestBikeStation = bikeStation
-                } else {
-                    let distance = location.distance(from: bikeStation.location)
-                    let nearestBikeStationDistance = location.distance(from: nearestBikeStation!.location)
-                    if distance < nearestBikeStationDistance {
-                        nearestBikeStation = bikeStation
-                    }
-                }
-            }
-        }
-        return nearestBikeStation
+        
+        return bikeStations.filter(condition)
+            .min { station1, station2 in
+                location.distance(from: station1.location) < location.distance(from: station2.location)}
     }
 }
