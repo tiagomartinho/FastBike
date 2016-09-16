@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E0BE890E704CD50D4A88F4206230B9 /* Pods-FastBikeWatchOS Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFCF769A9706A8A61F6FF010635C607C /* Pods-FastBikeWatchOS Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00E0BE890E704CD50D4A88F4206230B9 /* Pods-FastBikeWatchOS Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ABF7C0A1166E185BCC936D432D10C01 /* Pods-FastBikeWatchOS Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		010BD46905242F598E8A67456F308FF1 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC46EAC87966E159902A9A4FEEEB028 /* Timeline.swift */; };
 		02F69EC463991685E57FB198BE5EA293 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0926F188444A53AA4F92FB529FB7E187 /* SessionDelegate.swift */; };
 		0EA2D68723046E88A835CD79122D7129 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67011EB0BF19FCCFB5F67E2C88A80AF1 /* SessionManager.swift */; };
@@ -19,6 +19,7 @@
 		1B5244807103C3D778BE55C0F0915F0C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B73AEC8B62F3D7957A1B312233030A /* Request.swift */; };
 		1CFAD998620C7C66487852B4F86B0DBC /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7DE84DCF6DE08373584070E85DF228 /* Operators.swift */; };
 		272C4CC16973A140DFA0A5E5B6B4692D /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0C93CD23F81B0C77F4F946CF38435 /* ExtensionDictionary.swift */; };
+		2AA4895AF62318AB5D47158A6881B9CF /* Pods-FastBikeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B9045A676DC46A6AE6C92F06587BBE /* Pods-FastBikeTests-dummy.m */; };
 		338B3BB0D1F79E6EE6EE1E562A6A2496 /* Gloss-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F338D287AEA9E1930D0EE31357E23465 /* Gloss-iOS-dummy.m */; };
 		38FE108700355287567770F00BA66DA1 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F80AF2B1C6653550323BA09E95D87 /* AFError.swift */; };
 		41CEAE35886840B498572E89002892CA /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D27A384D2ABD02D2AE0791B746E0C2 /* ExtensionArray.swift */; };
@@ -47,18 +48,19 @@
 		B20449E1C354BF86CBA95B380A59B81F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A861ACB19C836FE8B8F110876C50C /* Validation.swift */; };
 		B4715EBA4733A766A370619F3EDD39FB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47921A3ABF0C621AA74C0E99BBC2E23 /* Result.swift */; };
 		B5FEAB981ABD3B86C6E277DB4B723D3E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF743066A533CAEE35EB3ABFCC18EA45 /* Notifications.swift */; };
-		BB52E612826678E0B0494A5734983C91 /* Pods-FastBike-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB9761FBF254D449A44B63D7949B604 /* Pods-FastBike-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB52E612826678E0B0494A5734983C91 /* Pods-FastBike-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C58CE5154B49677EFFAF3EBB4B41EA4 /* Pods-FastBike-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB5D515365860F8AEEC0CDB7E280524 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D72D3E11998EFC6E8FDC88F358326 /* Decoder.swift */; };
 		BFBCC2BBD64C8094D8A53398467A3C70 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47921A3ABF0C621AA74C0E99BBC2E23 /* Result.swift */; };
-		C057051F88B140B94EF31F64DF5A7635 /* Pods-FastBikeWatchOS Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A896BBE1E5C2F451FBF7B39919681FE /* Pods-FastBikeWatchOS Extension-dummy.m */; };
+		C057051F88B140B94EF31F64DF5A7635 /* Pods-FastBikeWatchOS Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50372E421242525D2843CAD3146C3CEC /* Pods-FastBikeWatchOS Extension-dummy.m */; };
 		C16DFC1F69B5D2454F9642D4EE6189D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB21402F2628AE5AD7FE931E3C014436 /* Foundation.framework */; };
+		C1C036AF0C4ACAE16838562B477ABA94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136DB53B8E99DF02F7BC3BDCD940258 /* Foundation.framework */; };
 		C2FB15FB93D6C16AE1BCD2388043E0D5 /* Alamofire-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A0824AAE1DD2C026E0DFBE8D32753B /* Alamofire-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3B7F71485E43026F5C2CEE45DE3CC6B /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056335C6AC6B317591A6E242BD5CE164 /* Gloss.swift */; };
 		CA7E8925C1059D928FF857BF81293A29 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D72D3E11998EFC6E8FDC88F358326 /* Decoder.swift */; };
 		D0651102F2A20F1B5B3B79AFA110F4DE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF743066A533CAEE35EB3ABFCC18EA45 /* Notifications.swift */; };
 		D0ACA3ACF3D4758341EBD4D4F51E85C9 /* Alamofire-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F0F1FDE8EB3A115BCAF7FD703085BC /* Alamofire-watchOS-dummy.m */; };
 		D135F8E61291D372D00282A7F33A5F27 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F80AF2B1C6653550323BA09E95D87 /* AFError.swift */; };
-		DB684D8AF4D8FB5FD5AE024471888409 /* Pods-FastBike-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5BABC364D077E0E1A77C7C86C1CACD /* Pods-FastBike-dummy.m */; };
+		DB684D8AF4D8FB5FD5AE024471888409 /* Pods-FastBike-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EE6930611A871DB0FAC1E40369DE1 /* Pods-FastBike-dummy.m */; };
 		DE3954627D645517067850B275D6AFA7 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67011EB0BF19FCCFB5F67E2C88A80AF1 /* SessionManager.swift */; };
 		DEF152F076F6D7C08B04902728A6BB39 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B888B44378245850CD3288409C50D /* ParameterEncoding.swift */; };
 		E4BC81E87EC921CF23D483E8D5240F10 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB790D40E733589B4C766C70A2E139BB /* TaskDelegate.swift */; };
@@ -105,68 +107,73 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05146A72E311325F6D111BD8862012E3 /* Pods-FastBikeWatchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FastBikeWatchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
 		056335C6AC6B317591A6E242BD5CE164 /* Gloss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gloss.swift; path = Sources/Gloss.swift; sourceTree = "<group>"; };
 		08133018A6751858054C1F4ECD9A0D06 /* Alamofire-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Alamofire-watchOS.modulemap"; path = "../Alamofire-watchOS/Alamofire-watchOS.modulemap"; sourceTree = "<group>"; };
 		0926F188444A53AA4F92FB529FB7E187 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		1423434C4AA437057C90AE0834031FA4 /* Alamofire-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-watchOS-prefix.pch"; path = "../Alamofire-watchOS/Alamofire-watchOS-prefix.pch"; sourceTree = "<group>"; };
 		18DB3C6ED2375C896D62B667BA75E4D2 /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = Sources/GAITrackedViewController.h; sourceTree = "<group>"; };
+		1ABF7C0A1166E185BCC936D432D10C01 /* Pods-FastBikeWatchOS Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FastBikeWatchOS Extension-umbrella.h"; sourceTree = "<group>"; };
 		1C03FC3813694F58DF45C933CB2567EB /* Alamofire-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Alamofire-iOS.modulemap"; sourceTree = "<group>"; };
 		1C07BB693D3B071913E9648B0E20161E /* GGLCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GGLCore.framework; path = Frameworks/GGLCore.framework; sourceTree = "<group>"; };
 		1CBCC20DBC52DC983953F6AC1C742000 /* Gloss-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Gloss-watchOS-prefix.pch"; path = "../Gloss-watchOS/Gloss-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		1EC8586806F600C3A7803D54652494B1 /* Pods-FastBike-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FastBike-resources.sh"; sourceTree = "<group>"; };
 		2012FAC4CA839D99DAC5DE6504A53DFD /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = Sources/GAI.h; sourceTree = "<group>"; };
-		20CAA8EA8892F471960E016A2C7196B3 /* Pods-FastBikeWatchOS Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FastBikeWatchOS Extension.modulemap"; sourceTree = "<group>"; };
-		21A42BA0C6904BEC3CDD1DB8E42337CA /* Pods-FastBikeWatchOS Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FastBikeWatchOS Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		24D73C6DC012ADA873182F977BA2A51B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Gloss-watchOS/Info.plist"; sourceTree = "<group>"; };
 		253170FBA45616E62126746B06C80D30 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		286FCB3833D73F9841BDDC036F17EF70 /* Analytics-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Analytics-Module.h"; path = "Headers/ModuleHeaders/Analytics-Module.h"; sourceTree = "<group>"; };
-		2AD7651B3AA67D3F8861F06082AB1881 /* Pods-FastBikeWatchOS Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FastBikeWatchOS Extension-frameworks.sh"; sourceTree = "<group>"; };
-		2BFD0B43C00D288A43F5B4E4DAF377B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290058EFA338CDB4F3DE199265480CFD /* Pods_FastBikeWatchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastBikeWatchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB36AC5B8CAE6EDE86CA63F75125693 /* Pods-FastBikeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FastBikeTests-frameworks.sh"; sourceTree = "<group>"; };
 		2C5E12FDF71BFE42FADF750AD0A443E4 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		3104D454E4402EFF1C4746DA9211CDA0 /* Gloss-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Gloss-iOS.xcconfig"; sourceTree = "<group>"; };
-		32FC54BA000FB00C551985CA19322A22 /* Pods-FastBikeWatchOS Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FastBikeWatchOS Extension-resources.sh"; sourceTree = "<group>"; };
+		33226ADDBA2951E82F9CCD30F289C77B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A139345A9E4A4913AA162689D7A183 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9AF865546BF1C8DDAF7B82A116F9A2 /* libPods-FastBikeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastBikeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C26DB570A71183E6A744C5A24EDFE39 /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = Sources/GAIFields.h; sourceTree = "<group>"; };
 		3D3601BE77C6CF95FEAEF5299377E0BD /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		3D3D7E5BAFDA52847905B5D78695B8F6 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		416E158C03B35103B3AA59FF2EA0E28D /* Pods-FastBikeWatchOS Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FastBikeWatchOS Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		49D9072B99B43D9E7AC0854FB2A1869D /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		4B9822E724DBDCAEC5E2CDED16541DB0 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D257B3CBC7264DD7646E10BB95BD5B8 /* Alamofire-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-iOS-prefix.pch"; sourceTree = "<group>"; };
+		4E5EE6930611A871DB0FAC1E40369DE1 /* Pods-FastBike-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FastBike-dummy.m"; sourceTree = "<group>"; };
+		50372E421242525D2843CAD3146C3CEC /* Pods-FastBikeWatchOS Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FastBikeWatchOS Extension-dummy.m"; sourceTree = "<group>"; };
 		529979DEF895455F02B6C87B49BD2A4C /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = Sources/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		54EB3C0B756950CAAC38FABC9D62A4F9 /* Pods-FastBikeWatchOS Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FastBikeWatchOS Extension-resources.sh"; sourceTree = "<group>"; };
 		586083F4F9C90575987EB5775A2972E1 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		5A896BBE1E5C2F451FBF7B39919681FE /* Pods-FastBikeWatchOS Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FastBikeWatchOS Extension-dummy.m"; sourceTree = "<group>"; };
-		5C965AA20C05BBAD3F260C43B28745A7 /* Pods-FastBike-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FastBike-frameworks.sh"; sourceTree = "<group>"; };
+		598F49C80D895882967E1C7E8E97AA1C /* Pods-FastBike-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FastBike-acknowledgements.plist"; sourceTree = "<group>"; };
 		6035BEDBF1192F8461840C85B56E1FEF /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = Sources/GAIEcommerceFields.h; sourceTree = "<group>"; };
+		6362D2437A55ABA9668A421BE99552FA /* Pods-FastBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FastBike.release.xcconfig"; sourceTree = "<group>"; };
+		63B9045A676DC46A6AE6C92F06587BBE /* Pods-FastBikeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FastBikeTests-dummy.m"; sourceTree = "<group>"; };
 		64769DB6BA1E999EE9D07F4AE0A3A0AE /* Gloss-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-iOS-umbrella.h"; sourceTree = "<group>"; };
 		65D7F7E300382BF5F3F3E4FD0D0A53AE /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Encoder.swift; sourceTree = "<group>"; };
 		66F832969654F8A15FB0529C5CA4A9F6 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = Sources/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
 		66F97BA5E407C3986281BB97C20D8331 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		67011EB0BF19FCCFB5F67E2C88A80AF1 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		67F82EF03973E47AB98B3FCE86D5502F /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC58D6E757B5900625FAE12FD19513B /* SignIn-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SignIn-Module.h"; path = "Headers/ModuleHeaders/SignIn-Module.h"; sourceTree = "<group>"; };
 		74900FD1910BD7319D4BA5B937C75491 /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = Sources/GAILogger.h; sourceTree = "<group>"; };
-		77EE08434EBBBC550CFA2CE706AB6337 /* Pods-FastBikeWatchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FastBikeWatchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		78ECD213305AC74C8035130CE045A4C6 /* Gloss-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Gloss-watchOS-umbrella.h"; path = "../Gloss-watchOS/Gloss-watchOS-umbrella.h"; sourceTree = "<group>"; };
-		799EEE33DABEEFEEEA51592C1A7FE82C /* Pods-FastBike-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FastBike-acknowledgements.plist"; sourceTree = "<group>"; };
-		7A97C43529E55F5175099A218A5A7ACD /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD304F9396ED87F4D61057FC36F65D1 /* Gloss-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Gloss-watchOS.xcconfig"; path = "../Gloss-watchOS/Gloss-watchOS.xcconfig"; sourceTree = "<group>"; };
 		7CC46EAC87966E159902A9A4FEEEB028 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		7D7DE84DCF6DE08373584070E85DF228 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		803A861ACB19C836FE8B8F110876C50C /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		8057811B86183313B7F7E9CCAF6F96D1 /* Pods_FastBikeWatchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastBikeWatchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E181D4750F6AFB7D369F36E51AB629 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		8572DD4C1BDC22A8DD4BCAB4BB38AC23 /* Pods-FastBikeWatchOS Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FastBikeWatchOS Extension.modulemap"; sourceTree = "<group>"; };
 		859F5D614F115F09535A9846605AE697 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		85CE50216CCF1571CA6217E384F30410 /* Pods-FastBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FastBike.debug.xcconfig"; sourceTree = "<group>"; };
 		870F80AF2B1C6653550323BA09E95D87 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		87A0824AAE1DD2C026E0DFBE8D32753B /* Alamofire-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-watchOS-umbrella.h"; path = "../Alamofire-watchOS/Alamofire-watchOS-umbrella.h"; sourceTree = "<group>"; };
-		8ECB40263D529592662D66690D1673F5 /* Pods-FastBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FastBike.release.xcconfig"; sourceTree = "<group>"; };
-		8F42BD98008FFA92143A1491254970DF /* Pods-FastBike-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FastBike-resources.sh"; sourceTree = "<group>"; };
+		8C0E25C46B18E22E2454636C2E49F038 /* Pods-FastBikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FastBikeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C58CE5154B49677EFFAF3EBB4B41EA4 /* Pods-FastBike-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FastBike-umbrella.h"; sourceTree = "<group>"; };
 		911802C098B1E9E96EB819AE616F95E4 /* Gloss-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Gloss-watchOS-dummy.m"; path = "../Gloss-watchOS/Gloss-watchOS-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		992E08F0E9D5F1983914C1D5D49537C5 /* Pods-FastBikeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FastBikeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9A8136EF8A50BBEA6D6BDC33924EFB3B /* Pods-FastBike.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FastBike.modulemap"; sourceTree = "<group>"; };
+		9B49D3381C302220182A54E1586CAE2D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDA3A5C9B64B9022A6459E95E9B867C /* Gloss-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-iOS-prefix.pch"; sourceTree = "<group>"; };
 		A136DB53B8E99DF02F7BC3BDCD940258 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A1B73AEC8B62F3D7957A1B312233030A /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		A2E40A72A55FD79F30A36A66C1472F59 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
 		A47921A3ABF0C621AA74C0E99BBC2E23 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		A488C1FF110FE52C90B8577E60FC85CE /* Pods_FastBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A529E3FD86EA1BB1EAC8DED6DCB7F336 /* Pods-FastBikeWatchOS Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FastBikeWatchOS Extension-acknowledgements.plist"; sourceTree = "<group>"; };
 		A5FF507474A3EB774D281755D47E1A87 /* Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Headers/Core.h; sourceTree = "<group>"; };
 		A6FD640B3474DC31D3EA40928514D7B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB21402F2628AE5AD7FE931E3C014436 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -174,27 +181,31 @@
 		AE7F41BE17813A85FBC3AFECB1E438B5 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
 		AF4920C18DB9B8AB85F8A77665BC21D5 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = Sources/GAIEcommerceProduct.h; sourceTree = "<group>"; };
 		B29B888B44378245850CD3288409C50D /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		B4B6690546CDE75FEBE045252CB8346F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C012BBEF3B6D8D4019A52ABB1ABC42EE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04ED70A79A987DDD682236580DA441E /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
 		C12D548D776279A9F54E9C42B2B24A1C /* Gloss-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Gloss-iOS.modulemap"; sourceTree = "<group>"; };
+		C6D405B4434D2F0B8C49201A5484AE62 /* Pods-FastBikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FastBikeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8F0F1FDE8EB3A115BCAF7FD703085BC /* Alamofire-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Alamofire-watchOS-dummy.m"; path = "../Alamofire-watchOS/Alamofire-watchOS-dummy.m"; sourceTree = "<group>"; };
+		CA681DC85B0F7BD3F2A613F884ABF4B5 /* Pods-FastBike-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FastBike-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CB3028D89157FA9D1C09307ABD208A62 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = Sources/GAIEcommercePromotion.h; sourceTree = "<group>"; };
-		CD5BABC364D077E0E1A77C7C86C1CACD /* Pods-FastBike-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FastBike-dummy.m"; sourceTree = "<group>"; };
+		CBFD45012BF0E4D1BFAF91383EC68FAE /* Pods-FastBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FastBike.debug.xcconfig"; sourceTree = "<group>"; };
 		CE3E01AB81EFF175BC5C7B85CE24FD70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFCF769A9706A8A61F6FF010635C607C /* Pods-FastBikeWatchOS Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FastBikeWatchOS Extension-umbrella.h"; sourceTree = "<group>"; };
 		CFE550BE6F5B1E988C0B36D62E9382E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Alamofire-watchOS/Info.plist"; sourceTree = "<group>"; };
+		D1C3948F43FDFF406E412A003FEE1A5B /* Pods-FastBikeWatchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FastBikeWatchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		D3B0BAA806B100D67CE99C8EBE2B1450 /* Pods-FastBike-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FastBike-frameworks.sh"; sourceTree = "<group>"; };
 		D563BB2B415B705E85AA62E12EBEFA69 /* Gloss-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Gloss-watchOS.modulemap"; path = "../Gloss-watchOS/Gloss-watchOS.modulemap"; sourceTree = "<group>"; };
 		D5A1327FB9038932F5D865D1B92C4365 /* GAITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = Sources/GAITracker.h; sourceTree = "<group>"; };
-		D7E7016D2A378F6C0D6B08D282EEAEE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8C6D35DE6F7AC5C2CAB1C5A265B3ABE /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		DB790D40E733589B4C766C70A2E139BB /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		DF1D72D3E11998EFC6E8FDC88F358326 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Decoder.swift; sourceTree = "<group>"; };
-		E65231F40B7F81EDEAEF61E42AF87CAB /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E72014CA23F8045A0A6A7BAA91ACAE8F /* Pods-FastBike-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FastBike-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E68FF26537098EB4BB62A0BDE313AEA9 /* Pods-FastBikeWatchOS Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FastBikeWatchOS Extension-acknowledgements.plist"; sourceTree = "<group>"; };
 		E76B7909CA122839C5EFF939D513BEE9 /* GGLAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GGLAnalytics.framework; path = Frameworks/GGLAnalytics.framework; sourceTree = "<group>"; };
 		E8023B3EC881E35019AAC9A45B852BF7 /* Alamofire-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-iOS-umbrella.h"; sourceTree = "<group>"; };
+		ECF69803133701CF68721C12F6AE8F9D /* Pods-FastBikeWatchOS Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FastBikeWatchOS Extension-frameworks.sh"; sourceTree = "<group>"; };
 		EDC4306E4EC9652BF5DA5326306C025A /* Analytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Analytics.h; path = Headers/Analytics.h; sourceTree = "<group>"; };
-		F06D0B70F879841ECE795A546F30DFC5 /* Pods-FastBikeWatchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FastBikeWatchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
+		EE1A84D98A029D37C7B3D59313943E37 /* Pods-FastBikeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FastBikeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF1EF97D5DA587C2C1913DCF12D12FE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F02F226426EE77CD8D573250D9FC0783 /* Pods-FastBikeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FastBikeTests-resources.sh"; sourceTree = "<group>"; };
 		F14B96FD4AA8B12D87282648747F0481 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		F16CB123D473F40D4C8414FA38FAEAC2 /* Alamofire-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-watchOS.xcconfig"; path = "../Alamofire-watchOS/Alamofire-watchOS.xcconfig"; sourceTree = "<group>"; };
 		F197A74D014A26EDE8DBF8A433EA088B /* Alamofire-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-iOS-dummy.m"; sourceTree = "<group>"; };
@@ -202,8 +213,7 @@
 		F3D27A384D2ABD02D2AE0791B746E0C2 /* ExtensionArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = Sources/ExtensionArray.swift; sourceTree = "<group>"; };
 		F7E0C93CD23F81B0C77F4F946CF38435 /* ExtensionDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionDictionary.swift; path = Sources/ExtensionDictionary.swift; sourceTree = "<group>"; };
 		FAFFDC0C4B3CE4C9DED791128DEB5317 /* Core-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Core-Module.h"; path = "Headers/ModuleHeaders/Core-Module.h"; sourceTree = "<group>"; };
-		FBB9761FBF254D449A44B63D7949B604 /* Pods-FastBike-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FastBike-umbrella.h"; sourceTree = "<group>"; };
-		FE658162A3B19261E2C41E8047F54EAB /* Pods-FastBike.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FastBike.modulemap"; sourceTree = "<group>"; };
+		FD10F1E5FCC30237A4A477A088146F86 /* Pods_FastBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF743066A533CAEE35EB3ABFCC18EA45 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +231,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1873719742A23517FB32CA9F62EC78CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7D10504D7457761E54C1E370F89F19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1C036AF0C4ACAE16838562B477ABA94 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +277,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C35FAA8146EFB3B4E7ABB701EEC2A94 /* Pods-FastBike */ = {
+			isa = PBXGroup;
+			children = (
+				EF1EF97D5DA587C2C1913DCF12D12FE8 /* Info.plist */,
+				9A8136EF8A50BBEA6D6BDC33924EFB3B /* Pods-FastBike.modulemap */,
+				CA681DC85B0F7BD3F2A613F884ABF4B5 /* Pods-FastBike-acknowledgements.markdown */,
+				598F49C80D895882967E1C7E8E97AA1C /* Pods-FastBike-acknowledgements.plist */,
+				4E5EE6930611A871DB0FAC1E40369DE1 /* Pods-FastBike-dummy.m */,
+				D3B0BAA806B100D67CE99C8EBE2B1450 /* Pods-FastBike-frameworks.sh */,
+				1EC8586806F600C3A7803D54652494B1 /* Pods-FastBike-resources.sh */,
+				8C58CE5154B49677EFFAF3EBB4B41EA4 /* Pods-FastBike-umbrella.h */,
+				CBFD45012BF0E4D1BFAF91383EC68FAE /* Pods-FastBike.debug.xcconfig */,
+				6362D2437A55ABA9668A421BE99552FA /* Pods-FastBike.release.xcconfig */,
+			);
+			name = "Pods-FastBike";
+			path = "Target Support Files/Pods-FastBike";
+			sourceTree = "<group>";
+		};
+		11D5222E8CC68C8809C0ECA5FB13DE1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C012BBEF3B6D8D4019A52ABB1ABC42EE /* Alamofire.framework */,
+				9B49D3381C302220182A54E1586CAE2D /* Alamofire.framework */,
+				4B9822E724DBDCAEC5E2CDED16541DB0 /* Gloss.framework */,
+				33A139345A9E4A4913AA162689D7A183 /* Gloss.framework */,
+				3B9AF865546BF1C8DDAF7B82A116F9A2 /* libPods-FastBikeTests.a */,
+				FD10F1E5FCC30237A4A477A088146F86 /* Pods_FastBike.framework */,
+				290058EFA338CDB4F3DE199265480CFD /* Pods_FastBikeWatchOS_Extension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1A690338628F0A7B9FF7C260B44E0C9B /* GoogleInterchangeUtilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,30 +333,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2422C2B20DAE9C4C69F38829A71ED27C /* Pods-FastBikeWatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				33226ADDBA2951E82F9CCD30F289C77B /* Info.plist */,
+				8572DD4C1BDC22A8DD4BCAB4BB38AC23 /* Pods-FastBikeWatchOS Extension.modulemap */,
+				416E158C03B35103B3AA59FF2EA0E28D /* Pods-FastBikeWatchOS Extension-acknowledgements.markdown */,
+				E68FF26537098EB4BB62A0BDE313AEA9 /* Pods-FastBikeWatchOS Extension-acknowledgements.plist */,
+				50372E421242525D2843CAD3146C3CEC /* Pods-FastBikeWatchOS Extension-dummy.m */,
+				ECF69803133701CF68721C12F6AE8F9D /* Pods-FastBikeWatchOS Extension-frameworks.sh */,
+				54EB3C0B756950CAAC38FABC9D62A4F9 /* Pods-FastBikeWatchOS Extension-resources.sh */,
+				1ABF7C0A1166E185BCC936D432D10C01 /* Pods-FastBikeWatchOS Extension-umbrella.h */,
+				D1C3948F43FDFF406E412A003FEE1A5B /* Pods-FastBikeWatchOS Extension.debug.xcconfig */,
+				05146A72E311325F6D111BD8862012E3 /* Pods-FastBikeWatchOS Extension.release.xcconfig */,
+			);
+			name = "Pods-FastBikeWatchOS Extension";
+			path = "Target Support Files/Pods-FastBikeWatchOS Extension";
+			sourceTree = "<group>";
+		};
 		26F9C39E7BC340A22D0172E36DD814C7 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				A136DB53B8E99DF02F7BC3BDCD940258 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		2ADE3B29AEAA93DBBF9AA2033478B0D4 /* Pods-FastBikeWatchOS Extension */ = {
-			isa = PBXGroup;
-			children = (
-				2BFD0B43C00D288A43F5B4E4DAF377B1 /* Info.plist */,
-				20CAA8EA8892F471960E016A2C7196B3 /* Pods-FastBikeWatchOS Extension.modulemap */,
-				21A42BA0C6904BEC3CDD1DB8E42337CA /* Pods-FastBikeWatchOS Extension-acknowledgements.markdown */,
-				A529E3FD86EA1BB1EAC8DED6DCB7F336 /* Pods-FastBikeWatchOS Extension-acknowledgements.plist */,
-				5A896BBE1E5C2F451FBF7B39919681FE /* Pods-FastBikeWatchOS Extension-dummy.m */,
-				2AD7651B3AA67D3F8861F06082AB1881 /* Pods-FastBikeWatchOS Extension-frameworks.sh */,
-				32FC54BA000FB00C551985CA19322A22 /* Pods-FastBikeWatchOS Extension-resources.sh */,
-				CFCF769A9706A8A61F6FF010635C607C /* Pods-FastBikeWatchOS Extension-umbrella.h */,
-				77EE08434EBBBC550CFA2CE706AB6337 /* Pods-FastBikeWatchOS Extension.debug.xcconfig */,
-				F06D0B70F879841ECE795A546F30DFC5 /* Pods-FastBikeWatchOS Extension.release.xcconfig */,
-			);
-			name = "Pods-FastBikeWatchOS Extension";
-			path = "Target Support Files/Pods-FastBikeWatchOS Extension";
 			sourceTree = "<group>";
 		};
 		33BD48A814A3BD8CACCBCDA110ED91DA /* Alamofire */ = {
@@ -360,21 +410,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		55C2F98A2397AFD06298A711E8618499 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C35FAA8146EFB3B4E7ABB701EEC2A94 /* Pods-FastBike */,
+				688364187748C22DFBF7349BEFC7BBBA /* Pods-FastBikeTests */,
+				2422C2B20DAE9C4C69F38829A71ED27C /* Pods-FastBikeWatchOS Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		5A881DB4D25F60808843220A3C471EE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				E76B7909CA122839C5EFF939D513BEE9 /* GGLAnalytics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5BF30FF980CEFAA5F0D97FFC4CB2E88E /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				74D0C38832441FDFE28D1F9726350E6F /* Pods-FastBike */,
-				2ADE3B29AEAA93DBBF9AA2033478B0D4 /* Pods-FastBikeWatchOS Extension */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		655FEF12B0A36D2E849F01E69809F038 /* GoogleSymbolUtilities */ = {
@@ -397,30 +448,27 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		688364187748C22DFBF7349BEFC7BBBA /* Pods-FastBikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE1A84D98A029D37C7B3D59313943E37 /* Pods-FastBikeTests-acknowledgements.markdown */,
+				992E08F0E9D5F1983914C1D5D49537C5 /* Pods-FastBikeTests-acknowledgements.plist */,
+				63B9045A676DC46A6AE6C92F06587BBE /* Pods-FastBikeTests-dummy.m */,
+				2BB36AC5B8CAE6EDE86CA63F75125693 /* Pods-FastBikeTests-frameworks.sh */,
+				F02F226426EE77CD8D573250D9FC0783 /* Pods-FastBikeTests-resources.sh */,
+				C6D405B4434D2F0B8C49201A5484AE62 /* Pods-FastBikeTests.debug.xcconfig */,
+				8C0E25C46B18E22E2454636C2E49F038 /* Pods-FastBikeTests.release.xcconfig */,
+			);
+			name = "Pods-FastBikeTests";
+			path = "Target Support Files/Pods-FastBikeTests";
+			sourceTree = "<group>";
+		};
 		69F424F28F998CB5A06656DF8042A4CB /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
 				AB21402F2628AE5AD7FE931E3C014436 /* Foundation.framework */,
 			);
 			name = watchOS;
-			sourceTree = "<group>";
-		};
-		74D0C38832441FDFE28D1F9726350E6F /* Pods-FastBike */ = {
-			isa = PBXGroup;
-			children = (
-				D7E7016D2A378F6C0D6B08D282EEAEE1 /* Info.plist */,
-				FE658162A3B19261E2C41E8047F54EAB /* Pods-FastBike.modulemap */,
-				E72014CA23F8045A0A6A7BAA91ACAE8F /* Pods-FastBike-acknowledgements.markdown */,
-				799EEE33DABEEFEEEA51592C1A7FE82C /* Pods-FastBike-acknowledgements.plist */,
-				CD5BABC364D077E0E1A77C7C86C1CACD /* Pods-FastBike-dummy.m */,
-				5C965AA20C05BBAD3F260C43B28745A7 /* Pods-FastBike-frameworks.sh */,
-				8F42BD98008FFA92143A1491254970DF /* Pods-FastBike-resources.sh */,
-				FBB9761FBF254D449A44B63D7949B604 /* Pods-FastBike-umbrella.h */,
-				85CE50216CCF1571CA6217E384F30410 /* Pods-FastBike.debug.xcconfig */,
-				8ECB40263D529592662D66690D1673F5 /* Pods-FastBike.release.xcconfig */,
-			);
-			name = "Pods-FastBike";
-			path = "Target Support Files/Pods-FastBike";
 			sourceTree = "<group>";
 		};
 		78CDC95B36711247AAED752CCEA3737A /* Gloss */ = {
@@ -443,8 +491,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
 				A1C57A1E5006F76B44F80C4AD977D717 /* Pods */,
-				F4BDB00D7A6C8295A25C787528783E8E /* Products */,
-				5BF30FF980CEFAA5F0D97FFC4CB2E88E /* Targets Support Files */,
+				11D5222E8CC68C8809C0ECA5FB13DE1D /* Products */,
+				55C2F98A2397AFD06298A711E8618499 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -580,19 +628,6 @@
 			path = "../Target Support Files/Alamofire-iOS";
 			sourceTree = "<group>";
 		};
-		F4BDB00D7A6C8295A25C787528783E8E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B4B6690546CDE75FEBE045252CB8346F /* Alamofire.framework */,
-				E65231F40B7F81EDEAEF61E42AF87CAB /* Alamofire.framework */,
-				67F82EF03973E47AB98B3FCE86D5502F /* Gloss.framework */,
-				7A97C43529E55F5175099A218A5A7ACD /* Gloss.framework */,
-				A488C1FF110FE52C90B8577E60FC85CE /* Pods_FastBike.framework */,
-				8057811B86183313B7F7E9CCAF6F96D1 /* Pods_FastBikeWatchOS_Extension.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F66D554432D5D55DA4284D8F7C6EED1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -669,7 +704,7 @@
 			);
 			name = "Alamofire-watchOS";
 			productName = "Alamofire-watchOS";
-			productReference = E65231F40B7F81EDEAEF61E42AF87CAB /* Alamofire.framework */;
+			productReference = 9B49D3381C302220182A54E1586CAE2D /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		18015BE0663768044B9A0C7F74EF685F /* Pods-FastBike */ = {
@@ -688,7 +723,7 @@
 			);
 			name = "Pods-FastBike";
 			productName = "Pods-FastBike";
-			productReference = A488C1FF110FE52C90B8577E60FC85CE /* Pods_FastBike.framework */;
+			productReference = FD10F1E5FCC30237A4A477A088146F86 /* Pods_FastBike.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		21B72ED5B31D17659ADA8325B141026B /* Gloss-watchOS */ = {
@@ -705,7 +740,7 @@
 			);
 			name = "Gloss-watchOS";
 			productName = "Gloss-watchOS";
-			productReference = 7A97C43529E55F5175099A218A5A7ACD /* Gloss.framework */;
+			productReference = 33A139345A9E4A4913AA162689D7A183 /* Gloss.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		68844DE8D2BF84C4FE02F60E5E068287 /* Gloss-iOS */ = {
@@ -722,7 +757,7 @@
 			);
 			name = "Gloss-iOS";
 			productName = "Gloss-iOS";
-			productReference = 67F82EF03973E47AB98B3FCE86D5502F /* Gloss.framework */;
+			productReference = 4B9822E724DBDCAEC5E2CDED16541DB0 /* Gloss.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		89C69EB624EC8137588D9568F2E11964 /* Alamofire-iOS */ = {
@@ -739,7 +774,7 @@
 			);
 			name = "Alamofire-iOS";
 			productName = "Alamofire-iOS";
-			productReference = B4B6690546CDE75FEBE045252CB8346F /* Alamofire.framework */;
+			productReference = C012BBEF3B6D8D4019A52ABB1ABC42EE /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A330B593F32F545642FD6EDE2A867788 /* Pods-FastBikeWatchOS Extension */ = {
@@ -758,8 +793,24 @@
 			);
 			name = "Pods-FastBikeWatchOS Extension";
 			productName = "Pods-FastBikeWatchOS Extension";
-			productReference = 8057811B86183313B7F7E9CCAF6F96D1 /* Pods_FastBikeWatchOS_Extension.framework */;
+			productReference = 290058EFA338CDB4F3DE199265480CFD /* Pods_FastBikeWatchOS_Extension.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		D6677E9B3FE090FB94F61A8B92CBB6EF /* Pods-FastBikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C68F2911866C271FED21830C75E3643 /* Build configuration list for PBXNativeTarget "Pods-FastBikeTests" */;
+			buildPhases = (
+				38D9C1570A245CE65CB7132FD80081EC /* Sources */,
+				6A7D10504D7457761E54C1E370F89F19 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FastBikeTests";
+			productName = "Pods-FastBikeTests";
+			productReference = 3B9AF865546BF1C8DDAF7B82A116F9A2 /* libPods-FastBikeTests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -778,7 +829,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F4BDB00D7A6C8295A25C787528783E8E /* Products */;
+			productRefGroup = 11D5222E8CC68C8809C0ECA5FB13DE1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -787,12 +838,21 @@
 				68844DE8D2BF84C4FE02F60E5E068287 /* Gloss-iOS */,
 				21B72ED5B31D17659ADA8325B141026B /* Gloss-watchOS */,
 				18015BE0663768044B9A0C7F74EF685F /* Pods-FastBike */,
+				D6677E9B3FE090FB94F61A8B92CBB6EF /* Pods-FastBikeTests */,
 				A330B593F32F545642FD6EDE2A867788 /* Pods-FastBikeWatchOS Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		38D9C1570A245CE65CB7132FD80081EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA4895AF62318AB5D47158A6881B9CF /* Pods-FastBikeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		410719CDAE87FE93011673172D464A8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -917,6 +977,37 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		251FA26AC400B41E7F249C21CEC0B5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16CB123D473F40D4C8414FA38FAEAC2 /* Alamofire-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
 		28AE27E9117CFC8D31A502CE9031C46A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -960,70 +1051,9 @@
 			};
 			name = Debug;
 		};
-		2A7A96773224700346DFFF14D91313BD /* Debug */ = {
+		4E5ACC1616597BF018ED914B8FFE48EC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BD304F9396ED87F4D61057FC36F65D1 /* Gloss-watchOS.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Gloss-watchOS/Gloss-watchOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Gloss-watchOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Gloss-watchOS/Gloss-watchOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Gloss;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		394C8FA003188A5B97A75502942E4431 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F16CB123D473F40D4C8414FA38FAEAC2 /* Alamofire-watchOS.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		3DED5C5717AD95F26490110FEECE26A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABA0FB158DF973740FC7EC3DE53F4CE5 /* Alamofire-iOS.xcconfig */;
+			baseConfigurationReference = 3104D454E4402EFF1C4746DA9211CDA0 /* Gloss-iOS.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1034,14 +1064,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss-iOS/Gloss-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Gloss-iOS/Gloss-iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
+				PRODUCT_NAME = Gloss;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1052,7 +1082,7 @@
 			};
 			name = Debug;
 		};
-		4A4DAAEEB05A08DF2C1097833AF3BAE3 /* Release */ = {
+		54E89BDDA4A1970A8E40B41BA70840B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3104D454E4402EFF1C4746DA9211CDA0 /* Gloss-iOS.xcconfig */;
 			buildSettings = {
@@ -1082,7 +1112,103 @@
 			};
 			name = Release;
 		};
-		556C0537A96B0C0D00D04224EA3BB08D /* Release */ = {
+		7E8660B34F0129AB3C00C90F6B2150B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C3948F43FDFF406E412A003FEE1A5B /* Pods-FastBikeWatchOS Extension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FastBikeWatchOS Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FastBikeWatchOS Extension/Pods-FastBikeWatchOS Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FastBikeWatchOS_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		820F9EE9EAB9B3307151B4DB9698E095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD304F9396ED87F4D61057FC36F65D1 /* Gloss-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss-watchOS/Gloss-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss-watchOS/Gloss-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		881EF401EEB6A66A708319CDB4056D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16CB123D473F40D4C8414FA38FAEAC2 /* Alamofire-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		888541D8B13CA48C4A897D1AE1AB300A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BD304F9396ED87F4D61057FC36F65D1 /* Gloss-watchOS.xcconfig */;
 			buildSettings = {
@@ -1112,7 +1238,76 @@
 			};
 			name = Release;
 		};
-		6AB551AFF70005060E27801D29F7D63A /* Release */ = {
+		92B1B4D1904C5004171F09AACC05C85E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05146A72E311325F6D111BD8862012E3 /* Pods-FastBikeWatchOS Extension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FastBikeWatchOS Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FastBikeWatchOS Extension/Pods-FastBikeWatchOS Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FastBikeWatchOS_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		9D2F483E00844FAD6360941C83244028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBFD45012BF0E4D1BFAF91383EC68FAE /* Pods-FastBike.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FastBike/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FastBike/Pods-FastBike.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FastBike;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A289985B9B87CC23EE031121FBD720C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABA0FB158DF973740FC7EC3DE53F4CE5 /* Alamofire-iOS.xcconfig */;
 			buildSettings = {
@@ -1142,141 +1337,31 @@
 			};
 			name = Release;
 		};
-		807662547135417F1172E6F01BC07057 /* Debug */ = {
+		AFA26F02749467A2CA18533E8A6D0EBC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85CE50216CCF1571CA6217E384F30410 /* Pods-FastBike.debug.xcconfig */;
+			baseConfigurationReference = 8C0E25C46B18E22E2454636C2E49F038 /* Pods-FastBikeTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FastBike/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FastBike/Pods-FastBike.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FastBike;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		875AA09C5B05356C997124275F74D3CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77EE08434EBBBC550CFA2CE706AB6337 /* Pods-FastBikeWatchOS Extension.debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FastBikeWatchOS Extension/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FastBikeWatchOS Extension/Pods-FastBikeWatchOS Extension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FastBikeWatchOS_Extension;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		AAE3A22E43433FA6AD63E52E2CE936E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F06D0B70F879841ECE795A546F30DFC5 /* Pods-FastBikeWatchOS Extension.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FastBikeWatchOS Extension/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FastBikeWatchOS Extension/Pods-FastBikeWatchOS Extension.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FastBikeWatchOS_Extension;
-				SDKROOT = watchos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		CB1F38FB42E62C6CF5A2EA373D0644AC /* Debug */ = {
+		BCF1CC6AF8138FA7E65C94D6F82F1517 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F16CB123D473F40D4C8414FA38FAEAC2 /* Alamofire-watchOS.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		CCEE5CECEC47B50371094C09B551DAC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ECB40263D529592662D66690D1673F5 /* Pods-FastBike.release.xcconfig */;
+			baseConfigurationReference = 6362D2437A55ABA9668A421BE99552FA /* Pods-FastBike.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1301,6 +1386,7 @@
 				PRODUCT_NAME = Pods_FastBike;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1346,9 +1432,31 @@
 			};
 			name = Release;
 		};
-		E0CBBA9C0C49D8EB4A146FD5ED6081A9 /* Debug */ = {
+		E06638BA1DA5557E854AC1ABAD46E66C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3104D454E4402EFF1C4746DA9211CDA0 /* Gloss-iOS.xcconfig */;
+			baseConfigurationReference = C6D405B4434D2F0B8C49201A5484AE62 /* Pods-FastBikeTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F99454A3A17B101BAC5E76876ED3FC5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABA0FB158DF973740FC7EC3DE53F4CE5 /* Alamofire-iOS.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1359,14 +1467,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Gloss-iOS/Gloss-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Gloss-iOS/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Gloss-iOS/Gloss-iOS.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Gloss;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1383,8 +1491,8 @@
 		1E8642B00B4E01E477F9A0CDAB74627C /* Build configuration list for PBXNativeTarget "Alamofire-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DED5C5717AD95F26490110FEECE26A9 /* Debug */,
-				6AB551AFF70005060E27801D29F7D63A /* Release */,
+				F99454A3A17B101BAC5E76876ED3FC5D /* Debug */,
+				A289985B9B87CC23EE031121FBD720C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1401,8 +1509,17 @@
 		2E2470DDA11840C563C21B180E0B4E81 /* Build configuration list for PBXNativeTarget "Pods-FastBikeWatchOS Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				875AA09C5B05356C997124275F74D3CA /* Debug */,
-				AAE3A22E43433FA6AD63E52E2CE936E6 /* Release */,
+				7E8660B34F0129AB3C00C90F6B2150B8 /* Debug */,
+				92B1B4D1904C5004171F09AACC05C85E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C68F2911866C271FED21830C75E3643 /* Build configuration list for PBXNativeTarget "Pods-FastBikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06638BA1DA5557E854AC1ABAD46E66C /* Debug */,
+				AFA26F02749467A2CA18533E8A6D0EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1410,8 +1527,8 @@
 		8B264765D54120716010003928FFEA54 /* Build configuration list for PBXNativeTarget "Alamofire-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB1F38FB42E62C6CF5A2EA373D0644AC /* Debug */,
-				394C8FA003188A5B97A75502942E4431 /* Release */,
+				251FA26AC400B41E7F249C21CEC0B5CE /* Debug */,
+				881EF401EEB6A66A708319CDB4056D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1419,8 +1536,8 @@
 		A90A85F4B6DD6C45335173F369E559A9 /* Build configuration list for PBXNativeTarget "Gloss-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0CBBA9C0C49D8EB4A146FD5ED6081A9 /* Debug */,
-				4A4DAAEEB05A08DF2C1097833AF3BAE3 /* Release */,
+				4E5ACC1616597BF018ED914B8FFE48EC /* Debug */,
+				54E89BDDA4A1970A8E40B41BA70840B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1428,8 +1545,8 @@
 		DC4E4CBD9E63DF299704E58D5BDAF112 /* Build configuration list for PBXNativeTarget "Pods-FastBike" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				807662547135417F1172E6F01BC07057 /* Debug */,
-				CCEE5CECEC47B50371094C09B551DAC7 /* Release */,
+				9D2F483E00844FAD6360941C83244028 /* Debug */,
+				BCF1CC6AF8138FA7E65C94D6F82F1517 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1437,8 +1554,8 @@
 		EE1396B61AEFDEEBEAC4C837CCB8B459 /* Build configuration list for PBXNativeTarget "Gloss-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A7A96773224700346DFFF14D91313BD /* Debug */,
-				556C0537A96B0C0D00D04224EA3BB08D /* Release */,
+				820F9EE9EAB9B3307151B4DB9698E095 /* Debug */,
+				888541D8B13CA48C4A897D1AE1AB300A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
