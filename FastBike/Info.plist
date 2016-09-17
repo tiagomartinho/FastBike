@@ -53,7 +53,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>Please let us use the camera to take a photo of the problem</string>
+	<string>FastBike ha bisogno della fotocamera per fare una foto della problematica</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
