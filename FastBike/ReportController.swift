@@ -15,10 +15,12 @@ class ReportController: UITableViewController, UIImagePickerControllerDelegate, 
     }
 
     @IBAction func cancel(_ sender: AnyObject) {
+        Analytics.track(category: "Report", action: "Cancel", label: "problemDescription: \(problemDescription.text ?? ""), foto: \(photo.image == nil ? "no" : "si")")
         dismiss(animated: true, completion: nil)
     }
 
     @IBAction func send(_ sender: AnyObject) {
+        Analytics.track(category: "Report", action: "Send", label: "problemDescription: \(problemDescription.text ?? ""), foto: \(photo.image == nil ? "no" : "si")")
         dismiss(animated: true, completion: nil)
     }
 
