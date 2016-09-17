@@ -37,7 +37,7 @@
 		<string>MKDirectionsModePedestrian</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Please let us know where you are for directions</string>
+	<string>FastBike ha bisogno della tua posizione per trovare le bici più vicine a te</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
