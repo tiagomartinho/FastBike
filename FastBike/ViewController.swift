@@ -41,7 +41,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let userLocation = location {
             MapUtilities.open(start: userLocation, end: nearestBikelocation)
         } else {
-            AlertUtilities.showErrorAlert(viewController: self)
+            AlertUtilities.showErrorAlert(viewController: self, message: "Per usare l'applicazione devi permettere l'uso della tua posizione", action: "Attiva posizione")
         }
     }
 

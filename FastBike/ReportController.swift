@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 
 class ReportController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -22,6 +23,24 @@ class ReportController: UITableViewController, UIImagePickerControllerDelegate, 
     }
 
     @IBAction func takePhoto(_ sender: AnyObject) {
+        let cameraMediaType = AVMediaTypeVideo
+        let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(forMediaType: cameraMediaType)
+
+        switch cameraAuthorizationStatus {
+        case .authorized:
+            self.openCamera()
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(forMediaType: cameraMediaType) { granted in
+                if granted {
+                    self.openCamera()
+                }
+            }
+        default:
+            AlertUtilities.showErrorAlert(viewController: self, message: "Per aggiungere una foto al report devi permettere l'uso della tua fotocamera", action: "Attiva fotocamera")
+        }
+    }
+
+    func openCamera() {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.allowsEditing = true

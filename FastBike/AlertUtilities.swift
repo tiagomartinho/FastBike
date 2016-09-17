@@ -1,11 +1,11 @@
 import UIKit
 
 class AlertUtilities {
-    static func showErrorAlert(viewController: UIViewController) {
+    static func showErrorAlert(viewController: UIViewController, message: String, action: String) {
         let alert = UIAlertController(title: "Attenzione",
-                                      message: "Per usare l'applicazione devi permettere l'uso della tua posizione",
+                                      message: message,
                                       preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Attiva posizione", style: .default, handler: { _ in
+        alert.addAction(UIAlertAction(title: action, style: .default, handler: { _ in
             if let url = URL(string: UIApplicationOpenSettingsURLString) {
                 UIApplication.shared.open(url, options: [String:Any](), completionHandler: nil)
             }
