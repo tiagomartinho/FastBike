@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.tm.FastBike</string>
+	<string>com.tm.FastBike.app</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

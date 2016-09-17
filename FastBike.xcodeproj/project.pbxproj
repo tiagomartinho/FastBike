@@ -785,7 +785,7 @@
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				IBSC_MODULE = FastBikeWatchOS_Extension;
 				INFOPLIST_FILE = FastBikeWatchOS/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -803,7 +803,7 @@
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				IBSC_MODULE = FastBikeWatchOS_Extension;
 				INFOPLIST_FILE = FastBikeWatchOS/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -821,7 +821,7 @@
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = "FastBikeWatchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -839,7 +839,7 @@
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = "FastBikeWatchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -954,7 +954,7 @@
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = FastBike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FastBike/FastBike-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -972,7 +972,7 @@
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = FastBike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBike.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FastBike/FastBike-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
