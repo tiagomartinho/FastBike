@@ -7,7 +7,7 @@ class AlertUtilities {
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: action, style: .default, handler: { _ in
             if let url = URL(string: UIApplicationOpenSettingsURLString) {
-                UIApplication.shared.open(url, options: [String:Any](), completionHandler: nil)
+                UIApplication.shared.openURL(url)
             }
         }))
         alert.addAction(UIAlertAction(title: "Annulla", style: .cancel, handler: nil))
