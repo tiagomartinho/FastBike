@@ -1,12 +1,10 @@
 PODS:
-  - Alamofire (4.0.0)
   - FirebaseAnalytics (3.4.2):
     - FirebaseInstanceID (~> 1.0)
     - GoogleInterchangeUtilities (~> 1.2)
     - GoogleSymbolUtilities (~> 1.1)
     - GoogleUtilities (~> 1.2)
   - FirebaseInstanceID (1.0.8)
-  - Gloss (0.7.4)
   - Google/Analytics (3.0.3):
     - Google/Core
     - GoogleAnalytics (~> 3.12)
@@ -20,31 +18,17 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
-  - Gloss (from `https://github.com/hkellaway/Gloss`, branch `swift_3.0`)
   - Google/Analytics
 
-EXTERNAL SOURCES:
-  Gloss:
-    :branch: swift_3.0
-    :git: https://github.com/hkellaway/Gloss
-
-CHECKOUT OPTIONS:
-  Gloss:
-    :commit: 145c78888ccca678bf146b5b0b58882016a4d9aa
-    :git: https://github.com/hkellaway/Gloss
-
 SPEC CHECKSUMS:
-  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
   FirebaseAnalytics: 3f5358d9104adf159cc8d99b7b501e50099a39ad
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
-  Gloss: d86009ef4d12c221d889c4e3f9e1eb547ee6251d
   Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GoogleInterchangeUtilities: def8415a862effc67d549d5b5b0b9c7a2f97d4de
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
 
-PODFILE CHECKSUM: fc9525d82aea2413e814dd4c990f4841eb63d486
+PODFILE CHECKSUM: 57965181efb6b6598226800e7f21f7193cc8c706
 
 COCOAPODS: 1.0.1

@@ -1,7 +1,5 @@
 import WatchKit
 import Foundation
-import Alamofire
-import Gloss
 import CoreLocation
 
 class InterfaceController: WKInterfaceController {
@@ -41,16 +39,28 @@ class InterfaceController: WKInterfaceController {
 
 extension InterfaceController {
     func getBikeStations() {
-        if let url = URL(string: "https://os.smartcommunitylab.it/core.mobility/bikesharing/trento") {
-            Alamofire.request(url, method: .get).responseJSON { response in
-                if let JSON = response.result.value as? [Gloss.JSON] {
-                    for bikeJSON in JSON {
-                        let bikeStation = BikeStation(json: bikeJSON)
-                        self.bikeStations.append(bikeStation)
-                        self.mapView.addAnnotation(bikeStation.location.coordinate, with: WKInterfaceMapPinColor.red)
+        let url = URL(string: "https://os.smartcommunitylab.it/core.mobility/bikesharing/trento")!
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let task = session.dataTask(with: url) {
+            data, response, error in
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let httpResponse = response as? HTTPURLResponse {
+                if httpResponse.statusCode == 200 {
+                    if let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as? [Any] {
+                        if let json = json {
+                            for element in json {
+                                if let element = element as? [String:AnyObject] {
+                                    let bikeStation = BikeStation(json: element)
+                                    self.bikeStations.append(bikeStation)
+                                    self.mapView.addAnnotation(bikeStation.location.coordinate, with: WKInterfaceMapPinColor.red)
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
+        task.resume()
     }
 }

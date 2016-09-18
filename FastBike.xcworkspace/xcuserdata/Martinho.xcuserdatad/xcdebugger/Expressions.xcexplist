@@ -13,5 +13,16 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "ViewController.(getBikeStations() -&gt; ()).(closure #1):ViewController+BikeStationService.swift">
+      </ContextState>
+      <ContextState
+         contextName = "BikeStation.init(json : [String : AnyObject]) -&gt; BikeStation:BikeStation.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;position&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

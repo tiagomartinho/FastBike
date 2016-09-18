@@ -1,5 +1,4 @@
 import UIKit
-import Gloss
 import MapKit
 
 class ViewController: UIViewController, MKMapViewDelegate {

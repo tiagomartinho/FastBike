@@ -1,8 +1,7 @@
-import Gloss
 import CoreLocation
 import MapKit
 
-class BikeStation: NSObject, Decodable {
+class BikeStation: NSObject {
     let name: String
     let address: String
     let id: String
@@ -11,14 +10,14 @@ class BikeStation: NSObject, Decodable {
     let totalSlots: Int
     let location: CLLocation
 
-    required init(json: JSON) {
-        self.name = ("name" <~~ json) ?? ""
-        self.address = ("address" <~~ json) ?? ""
-        self.id = ("id" <~~ json) ?? ""
-        self.bikes = ("bikes" <~~ json) ?? 0
-        self.slots = ("slots" <~~ json) ?? 0
-        self.totalSlots = ("totalSlots" <~~ json) ?? 0
-        let positionArray: [Double] = ("position" <~~ json) ?? [0.0, 0.0]
+    required init(json: [String:AnyObject]) {
+        self.name = (json["name"] as? String) ?? ""
+        self.address = (json["address"] as? String) ?? ""
+        self.id = (json["id"] as? String) ?? ""
+        self.bikes = (json["bikes"] as? Int) ?? 0
+        self.slots =  (json["slots"] as? Int) ?? 0
+        self.totalSlots = (json["totalSlots"] as? Int) ?? 0
+        let positionArray: [Double] = (json["position"] as? [Double]) ?? [0.0, 0.0]
         self.location = CLLocation(latitude: positionArray[0],
                                    longitude: positionArray[1])
     }
