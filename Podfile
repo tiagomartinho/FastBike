@@ -1,16 +1,12 @@
+use_frameworks!
+platform :ios, '9.0'
+
 target 'FastBike' do
-  use_frameworks!
-  platform :ios, '10.0'
   pod 'Google/Analytics'
 end
 
 target 'FastBikeTests' do
   pod 'Google/Analytics'
-end
-
-target 'FastBikeWatchOS Extension' do
-    use_frameworks!
-    platform :watchos, '3.0'
 end
 
 post_install do |installer|
