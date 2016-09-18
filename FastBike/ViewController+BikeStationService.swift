@@ -16,7 +16,9 @@ extension ViewController {
                                 if let element = element as? [String:AnyObject] {
                                     let bikeStation = BikeStation(json: element)
                                     self.bikeStations.append(bikeStation)
-                                    self.mapView.addAnnotation(bikeStation)
+                                    DispatchQueue.main.async {
+                                        self.mapView.addAnnotation(bikeStation)
+                                    }
                                 }
                             }
                         }
