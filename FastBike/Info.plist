@@ -54,6 +54,8 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>FastBike ha bisogno della fotocamera per fare una foto della problematica</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>FastBike ha bisogno della fotocamera per fare una foto della problematica</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
