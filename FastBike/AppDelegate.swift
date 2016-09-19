@@ -10,6 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GGLContext.sharedInstance().configureWithError(&error)
         let gai = GAI.sharedInstance()
         gai?.trackUncaughtExceptions = true
+        BuddyBuildSDK.setup()
         return true
     }
 }

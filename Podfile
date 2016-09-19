@@ -1,12 +1,17 @@
 use_frameworks!
 platform :ios, '9.0'
 
+def app_pods
+    pod 'Google/Analytics'
+    pod 'BuddyBuildSDK'
+end
+
 target 'FastBike' do
-  pod 'Google/Analytics'
+  app_pods
 end
 
 target 'FastBikeTests' do
-  pod 'Google/Analytics'
+  app_pods
 end
 
 post_install do |installer|

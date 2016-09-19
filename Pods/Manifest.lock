@@ -1,4 +1,5 @@
 PODS:
+  - BuddyBuildSDK (1.0.12)
   - FirebaseAnalytics (3.4.2):
     - FirebaseInstanceID (~> 1.0)
     - GoogleInterchangeUtilities (~> 1.2)
@@ -18,9 +19,11 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
 
 DEPENDENCIES:
+  - BuddyBuildSDK
   - Google/Analytics
 
 SPEC CHECKSUMS:
+  BuddyBuildSDK: f4682598772ae66c9ef5554d2d78d0a19fb413a0
   FirebaseAnalytics: 3f5358d9104adf159cc8d99b7b501e50099a39ad
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
   Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
@@ -29,6 +32,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
 
-PODFILE CHECKSUM: fc8b01bc9ec28701b95209d270f83f7da5e8907f
+PODFILE CHECKSUM: 29d21f1be7710dfa33353cffbfad9e1fb8b9212a
 
 COCOAPODS: 1.0.1
