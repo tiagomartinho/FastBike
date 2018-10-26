@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E6C5A7A11BB13402FDDA3C8 /* Pods_FastBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2732D8089FB23A62DEB82 /* Pods_FastBike.framework */; };
-		624AD2CD54B46B2508250B63 /* Pods_FastBikeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BF947F0CA2EADB5CD12B9D /* Pods_FastBikeTests.framework */; };
 		95BA99001D8C6F73005905FB /* BikeStationFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */; };
 		C554DDA81D887DAB00D75679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C554DDA71D887DAB00D75679 /* Assets.xcassets */; };
 		EA04C82B1D8839FB00C98C41 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA04C82A1D8839FB00C98C41 /* MapKit.framework */; };
@@ -99,15 +97,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		05BF947F0CA2EADB5CD12B9D /* Pods_FastBikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastBikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23C2732D8089FB23A62DEB82 /* Pods_FastBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2718D3320DC82A48A40F7F83 /* Pods-FastBikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastBikeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastBikeTests/Pods-FastBikeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		57168AAB990EB3B81D8148EB /* Pods-FastBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastBike/Pods-FastBike.debug.xcconfig"; sourceTree = "<group>"; };
-		B3342528CA9675D8BD8D935A /* Pods_FastBikeWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastBikeWatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C554DDA71D887DAB00D75679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D9B6543F990C62229A89BD07 /* Pods-FastBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastBike/Pods-FastBike.release.xcconfig"; sourceTree = "<group>"; };
-		E15D0684D3B864F03059EB1E /* Pods-FastBikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastBikeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastBikeTests/Pods-FastBikeTests.release.xcconfig"; sourceTree = "<group>"; };
-		E55794F6182DA4527AA75665 /* Pods_FastBikeWatchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastBikeWatchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA04C82A1D8839FB00C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStationFinder.swift; sourceTree = "<group>"; };
 		EA04C82E1D88528600C98C41 /* ViewController+BikeStationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+BikeStationService.swift"; sourceTree = "<group>"; };
@@ -167,7 +157,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA04C82B1D8839FB00C98C41 /* MapKit.framework in Frameworks */,
-				1E6C5A7A11BB13402FDDA3C8 /* Pods_FastBike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +164,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624AD2CD54B46B2508250B63 /* Pods_FastBikeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,23 +182,8 @@
 			children = (
 				EA04C8641D88968600C98C41 /* MapKit.framework */,
 				EA04C82A1D8839FB00C98C41 /* MapKit.framework */,
-				23C2732D8089FB23A62DEB82 /* Pods_FastBike.framework */,
-				B3342528CA9675D8BD8D935A /* Pods_FastBikeWatchOS.framework */,
-				E55794F6182DA4527AA75665 /* Pods_FastBikeWatchOS_Extension.framework */,
-				05BF947F0CA2EADB5CD12B9D /* Pods_FastBikeTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E856B9F9F457127ECDD85690 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				57168AAB990EB3B81D8148EB /* Pods-FastBike.debug.xcconfig */,
-				D9B6543F990C62229A89BD07 /* Pods-FastBike.release.xcconfig */,
-				2718D3320DC82A48A40F7F83 /* Pods-FastBikeTests.debug.xcconfig */,
-				E15D0684D3B864F03059EB1E /* Pods-FastBikeTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		EA04C8401D88894000C98C41 /* FastBikeWatchOS */ = {
@@ -246,7 +219,6 @@
 				EA04C8401D88894000C98C41 /* FastBikeWatchOS */,
 				EA04C84F1D88894000C98C41 /* FastBikeWatchOS Extension */,
 				EA2840C71D88159000BCE287 /* Products */,
-				E856B9F9F457127ECDD85690 /* Pods */,
 				8D9AAC3DA767BC4862B5ACE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -354,12 +326,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA2840EE1D88159000BCE287 /* Build configuration list for PBXNativeTarget "FastBike" */;
 			buildPhases = (
-				27B046DDF011C3A7DDEF8939 /* [CP] Check Pods Manifest.lock */,
 				EA2840C21D88159000BCE287 /* Sources */,
 				EA2840C31D88159000BCE287 /* Frameworks */,
 				EA2840C41D88159000BCE287 /* Resources */,
-				17DA299FE4DB7987AA85B1AD /* [CP] Embed Pods Frameworks */,
-				DA1D37CA6CFA133F6274B7EC /* [CP] Copy Pods Resources */,
 				EA04C8631D88894000C98C41 /* Embed Watch Content */,
 			);
 			buildRules = (
@@ -376,12 +345,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA2840F11D88159000BCE287 /* Build configuration list for PBXNativeTarget "FastBikeTests" */;
 			buildPhases = (
-				788AD7D790E3A39C5CA47062 /* [CP] Check Pods Manifest.lock */,
 				EA2840D61D88159000BCE287 /* Sources */,
 				EA2840D71D88159000BCE287 /* Frameworks */,
 				EA2840D81D88159000BCE287 /* Resources */,
-				AAB738B56F618C0FC8C3658D /* [CP] Embed Pods Frameworks */,
-				C46AC866191DC922E94C675D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -527,99 +493,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		17DA299FE4DB7987AA85B1AD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastBike/Pods-FastBike-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		27B046DDF011C3A7DDEF8939 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		788AD7D790E3A39C5CA47062 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AAB738B56F618C0FC8C3658D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastBikeTests/Pods-FastBikeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C46AC866191DC922E94C675D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastBikeTests/Pods-FastBikeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DA1D37CA6CFA133F6274B7EC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastBike/Pods-FastBike-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA04C8471D88894000C98C41 /* Sources */ = {
@@ -890,7 +763,6 @@
 		};
 		EA2840EF1D88159000BCE287 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57168AAB990EB3B81D8148EB /* Pods-FastBike.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -908,7 +780,6 @@
 		};
 		EA2840F01D88159000BCE287 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9B6543F990C62229A89BD07 /* Pods-FastBike.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -925,7 +796,6 @@
 		};
 		EA2840F21D88159000BCE287 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2718D3320DC82A48A40F7F83 /* Pods-FastBikeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -942,7 +812,6 @@
 		};
 		EA2840F31D88159000BCE287 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E15D0684D3B864F03059EB1E /* Pods-FastBikeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

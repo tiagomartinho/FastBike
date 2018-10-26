@@ -1,6 +1,0 @@
-framework module Pods_FastBike {
-  umbrella header "Pods-FastBike-umbrella.h"
-
-  export *
-  module * { export * }
-}
