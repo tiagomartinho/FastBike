@@ -18,6 +18,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         getBikeStations()
         getUserPosition()
         Analytics.track(screen: "Main View")
+        reportButton.isHidden = true
         reportButton.setImage(#imageLiteral(resourceName: "lavoripiena"), for: .highlighted)
         bikeButton.setImage(#imageLiteral(resourceName: "bicipiena"), for: .highlighted)
         parkButton.setImage(#imageLiteral(resourceName: "Parcheggiopiena"), for: .highlighted)
