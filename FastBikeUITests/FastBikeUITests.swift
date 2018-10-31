@@ -9,5 +9,9 @@ class FastBikeUITests: XCTestCase {
     }
     
     func testExample() {
+        let app = XCUIApplication()
+        app.otherElements["Piazza della Mostra, 3 Bici, 8 Posti"].tap()
+        app.buttons["bicivuota"].tap()
+
     }
 }
