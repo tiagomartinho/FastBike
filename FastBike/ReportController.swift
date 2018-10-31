@@ -25,14 +25,13 @@ class ReportController: UITableViewController, UIImagePickerControllerDelegate, 
     }
 
     @IBAction func takePhoto(_ sender: AnyObject) {
-        let cameraMediaType = AVMediaTypeVideo
-        let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(forMediaType: cameraMediaType)
+        let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
 
         switch cameraAuthorizationStatus {
         case .authorized:
             self.openCamera()
         case .notDetermined:
-            AVCaptureDevice.requestAccess(forMediaType: cameraMediaType) { granted in
+            AVCaptureDevice.requestAccess(for: .video) { granted in
                 if granted {
                     self.openCamera()
                 }
@@ -50,8 +49,11 @@ class ReportController: UITableViewController, UIImagePickerControllerDelegate, 
         present(picker, animated: true, completion: nil)
     }
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
+        if let image = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.editedImage)] as? UIImage {
             photo.image = image
         }
         picker.dismiss(animated: true, completion: nil)
@@ -68,4 +70,15 @@ class TextFieldShouldReturn: NSObject, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
 }

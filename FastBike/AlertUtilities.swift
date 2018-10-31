@@ -6,7 +6,7 @@ class AlertUtilities {
                                       message: message,
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: action, style: .default, handler: { _ in
-            if let url = URL(string: UIApplicationOpenSettingsURLString) {
+            if let url = URL(string: UIApplication.openSettingsURLString) {
                 UIApplication.shared.openURL(url)
             }
         }))
