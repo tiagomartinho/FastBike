@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2456B01C218DB444007125E1 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2456B01B218DB444007125E1 /* ViewControllerTest.swift */; };
+		2456B01E218DB653007125E1 /* BikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2456B01D218DB653007125E1 /* BikeStationService.swift */; };
+		2456B020218DB7E0007125E1 /* HttpBikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2456B01F218DB7E0007125E1 /* HttpBikeStationService.swift */; };
 		95BA99001D8C6F73005905FB /* BikeStationFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */; };
 		C554DDA81D887DAB00D75679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C554DDA71D887DAB00D75679 /* Assets.xcassets */; };
 		EA04C82B1D8839FB00C98C41 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA04C82A1D8839FB00C98C41 /* MapKit.framework */; };
@@ -97,6 +100,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2456B01B218DB444007125E1 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		2456B01D218DB653007125E1 /* BikeStationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationService.swift; sourceTree = "<group>"; };
+		2456B01F218DB7E0007125E1 /* HttpBikeStationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBikeStationService.swift; sourceTree = "<group>"; };
 		C554DDA71D887DAB00D75679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA04C82A1D8839FB00C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStationFinder.swift; sourceTree = "<group>"; };
@@ -249,6 +255,8 @@
 				EA04C83B1D887BDC00C98C41 /* Analytics.swift */,
 				EAC6A2F61D8825990035A62A /* Supporting Files */,
 				EA2037B31D8943B70043DA05 /* ReportController.swift */,
+				2456B01D218DB653007125E1 /* BikeStationService.swift */,
+				2456B01F218DB7E0007125E1 /* HttpBikeStationService.swift */,
 			);
 			path = FastBike;
 			sourceTree = "<group>";
@@ -258,6 +266,7 @@
 			children = (
 				EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */,
 				EA2840E01D88159000BCE287 /* Info.plist */,
+				2456B01B218DB444007125E1 /* ViewControllerTest.swift */,
 			);
 			path = FastBikeTests;
 			sourceTree = "<group>";
@@ -522,6 +531,8 @@
 				EA2840CA1D88159000BCE287 /* AppDelegate.swift in Sources */,
 				EA04C8351D88559900C98C41 /* MapsUtilities.swift in Sources */,
 				EA04C8331D8853B700C98C41 /* AlertUtilities.swift in Sources */,
+				2456B020218DB7E0007125E1 /* HttpBikeStationService.swift in Sources */,
+				2456B01E218DB653007125E1 /* BikeStationService.swift in Sources */,
 				EA04C82F1D88528600C98C41 /* ViewController+BikeStationService.swift in Sources */,
 				EAC6A2F31D88255A0035A62A /* BikeStation.swift in Sources */,
 				EA04C82D1D884FB800C98C41 /* BikeStationFinder.swift in Sources */,
@@ -534,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2456B01C218DB444007125E1 /* ViewControllerTest.swift in Sources */,
 				95BA99001D8C6F73005905FB /* BikeStationFinderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

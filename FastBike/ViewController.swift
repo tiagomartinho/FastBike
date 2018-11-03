@@ -1,6 +1,9 @@
 import UIKit
 import MapKit
 
+extension ViewController: BikeStationServiceDelegate {
+}
+
 class ViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
@@ -12,16 +15,33 @@ class ViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet var bikeButton: UIButton!
     @IBOutlet var parkButton: UIButton!
 
+    var service: BikeStationService?
+
+    convenience init(service: BikeStationService?) {
+        self.init()
+        self.service = service
+    }
+
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.service = HttpBikeStationService(delegate: self)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.service = HttpBikeStationService(delegate: self)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapView.delegate = self
-        getBikeStations()
+        mapView?.delegate = self
+        service?.getStations()
         getUserPosition()
         Analytics.track(screen: "Main View")
-        reportButton.isHidden = true
-        reportButton.setImage(#imageLiteral(resourceName: "lavoripiena"), for: .highlighted)
-        bikeButton.setImage(#imageLiteral(resourceName: "bicipiena"), for: .highlighted)
-        parkButton.setImage(#imageLiteral(resourceName: "Parcheggiopiena"), for: .highlighted)
+        reportButton?.isHidden = true
+        reportButton?.setImage(#imageLiteral(resourceName: "lavoripiena"), for: .highlighted)
+        bikeButton?.setImage(#imageLiteral(resourceName: "bicipiena"), for: .highlighted)
+        parkButton?.setImage(#imageLiteral(resourceName: "Parcheggiopiena"), for: .highlighted)
     }
 
     @IBAction func findNearestBike() {
