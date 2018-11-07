@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,19 +14,15 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FastBike" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FT5-3y-fKE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8N-KV-mAm">
-                                <rect key="frame" x="14" y="29" width="54" height="54"/>
+                                <rect key="frame" x="14" y="53" width="54" height="54"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuM-TR-eTK">
                                         <rect key="frame" x="7" y="7" width="40" height="40"/>
@@ -52,51 +49,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-ll-HXG">
-                                <rect key="frame" x="20" y="550" width="66" height="87"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-LF-A7O">
-                                        <rect key="frame" x="8" y="8" width="50" height="71"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYc-7p-2Go">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="bVM-oG-fAr"/>
-                                                    <constraint firstAttribute="width" constant="50" id="cgc-YL-fQw"/>
-                                                </constraints>
-                                                <state key="normal" image="bicivuota"/>
-                                                <connections>
-                                                    <action selector="findNearestBike" destination="BYZ-38-t0r" eventType="touchUpInside" id="hca-Hc-kXf"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-yZ-Bsz">
-                                                <rect key="frame" x="0.0" y="42" width="50" height="29"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <state key="normal" title="Prendi">
-                                                    <color key="titleColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="findNearestBike" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIJ-aV-56v"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="Ase-LF-A7O" firstAttribute="top" secondItem="Lpd-ll-HXG" secondAttribute="top" constant="8" id="13a-pt-bx0"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ase-LF-A7O" secondAttribute="trailing" constant="8" id="fQJ-PD-3DP"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ase-LF-A7O" secondAttribute="bottom" constant="8" id="gyi-B0-Dny"/>
-                                    <constraint firstItem="Ase-LF-A7O" firstAttribute="leading" secondItem="Lpd-ll-HXG" secondAttribute="leading" constant="8" id="s0L-L6-R9R"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdY-t4-02F">
-                                <rect key="frame" x="289" y="550" width="66" height="87"/>
+                                <rect key="frame" x="328" y="755" width="66" height="87"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="SYX-w5-ZxO">
                                         <rect key="frame" x="8" y="8" width="50" height="71"/>
@@ -138,20 +92,64 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-ll-HXG">
+                                <rect key="frame" x="20" y="755" width="66" height="87"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-LF-A7O">
+                                        <rect key="frame" x="8" y="8" width="50" height="71"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYc-7p-2Go">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="bVM-oG-fAr"/>
+                                                    <constraint firstAttribute="width" constant="50" id="cgc-YL-fQw"/>
+                                                </constraints>
+                                                <state key="normal" image="bicivuota"/>
+                                                <connections>
+                                                    <action selector="findNearestBike" destination="BYZ-38-t0r" eventType="touchUpInside" id="hca-Hc-kXf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-yZ-Bsz">
+                                                <rect key="frame" x="0.0" y="42" width="50" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Prendi">
+                                                    <color key="titleColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="findNearestBike" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIJ-aV-56v"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ase-LF-A7O" firstAttribute="top" secondItem="Lpd-ll-HXG" secondAttribute="top" constant="8" id="13a-pt-bx0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ase-LF-A7O" secondAttribute="trailing" constant="8" id="fQJ-PD-3DP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ase-LF-A7O" secondAttribute="bottom" constant="8" id="gyi-B0-Dny"/>
+                                    <constraint firstItem="Ase-LF-A7O" firstAttribute="leading" secondItem="Lpd-ll-HXG" secondAttribute="leading" constant="8" id="s0L-L6-R9R"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fdY-t4-02F" secondAttribute="trailing" constant="20" id="L7g-Ir-7e8"/>
-                            <constraint firstItem="FT5-3y-fKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OTG-0f-bPC"/>
+                            <constraint firstItem="FT5-3y-fKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PFH-BX-8Kv"/>
+                            <constraint firstItem="Lpd-ll-HXG" firstAttribute="leading" secondItem="wMi-VN-lIy" secondAttribute="leading" constant="20" id="Q7L-37-wLw"/>
                             <constraint firstItem="FT5-3y-fKE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Q7d-b8-oxs"/>
-                            <constraint firstItem="D8N-KV-mAm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="14" id="QjD-Bd-ITc"/>
-                            <constraint firstItem="Lpd-ll-HXG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="R8g-zS-aSM"/>
-                            <constraint firstItem="D8N-KV-mAm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="9" id="WEy-CE-RTO"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lpd-ll-HXG" secondAttribute="bottom" constant="30" id="aa8-cx-aNB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FT5-3y-fKE" secondAttribute="bottom" id="bnL-YD-p4m"/>
-                            <constraint firstAttribute="trailing" secondItem="FT5-3y-fKE" secondAttribute="trailing" id="ifm-uD-rh3"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fdY-t4-02F" secondAttribute="bottom" constant="30" id="tf8-rf-fSy"/>
+                            <constraint firstItem="D8N-KV-mAm" firstAttribute="leading" secondItem="wMi-VN-lIy" secondAttribute="leading" constant="14" id="QjD-Bd-ITc"/>
+                            <constraint firstItem="wMi-VN-lIy" firstAttribute="trailing" secondItem="fdY-t4-02F" secondAttribute="trailing" constant="20" id="U2K-2L-Cgc"/>
+                            <constraint firstItem="D8N-KV-mAm" firstAttribute="top" secondItem="wMi-VN-lIy" secondAttribute="top" constant="9" id="WEy-CE-RTO"/>
+                            <constraint firstItem="wMi-VN-lIy" firstAttribute="bottom" secondItem="Lpd-ll-HXG" secondAttribute="bottom" constant="20" id="aa8-cx-aNB"/>
+                            <constraint firstAttribute="bottom" secondItem="FT5-3y-fKE" secondAttribute="bottom" id="aaC-3d-nKw"/>
+                            <constraint firstAttribute="trailing" secondItem="FT5-3y-fKE" secondAttribute="trailing" id="tMe-RN-YVM"/>
+                            <constraint firstItem="wMi-VN-lIy" firstAttribute="bottom" secondItem="fdY-t4-02F" secondAttribute="bottom" constant="20" id="tf8-rf-fSy"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="wMi-VN-lIy"/>
                     </view>
                     <connections>
                         <outlet property="bikeButton" destination="NYc-7p-2Go" id="ANA-7K-bog"/>
@@ -193,6 +191,7 @@
                         <constraint firstAttribute="bottom" secondItem="hIS-ew-yfY" secondAttribute="bottom" constant="8" id="iuu-Sm-7xW"/>
                         <constraint firstItem="hIS-ew-yfY" firstAttribute="top" secondItem="jix-pZ-4gs" secondAttribute="top" constant="8" id="kVF-7M-oYY"/>
                     </constraints>
+                    <viewLayoutGuide key="safeArea" id="B3v-2g-eu1"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="8"/>
@@ -200,28 +199,28 @@
                     </userDefinedRuntimeAttributes>
                 </view>
             </objects>
-            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
         </scene>
         <!--Report-->
         <scene sceneID="0NC-IM-t05">
             <objects>
                 <tableViewController id="Upg-7q-fAT" customClass="ReportController" customModule="FastBike" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="V25-CF-oMr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Descrizione del problema" id="0Ee-NJ-7E1">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QQg-RA-6bS">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QQg-RA-6bS" id="3N2-BF-l3g">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-7S-g4d">
-                                                    <rect key="frame" x="20" y="0.0" width="335" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.666666666666664"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -240,17 +239,17 @@
                             <tableViewSection headerTitle="Foto" id="5vs-0T-HKu">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="h3U-dm-Cr4">
-                                        <rect key="frame" x="0.0" y="155.5" width="375" height="200"/>
+                                        <rect key="frame" x="0.0" y="155.33333333333334" width="414" height="200.00000000000003"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h3U-dm-Cr4" id="Onh-RM-Qn6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="199.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="400" verticalCompressionResistancePriority="900" translatesAutoresizingMaskIntoConstraints="NO" id="jdz-Kt-ATX">
-                                                    <rect key="frame" x="28" y="23" width="319" height="154"/>
+                                                    <rect key="frame" x="32" y="23" width="350" height="154"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="300" verticalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAo-87-ajq">
-                                                    <rect key="frame" x="160.5" y="78" width="54" height="44"/>
+                                                    <rect key="frame" x="180" y="78" width="54" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="3wY-P4-9v5"/>
                                                     </constraints>
@@ -308,7 +307,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q6D-ux-5bA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mjd-Ss-Nse">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
