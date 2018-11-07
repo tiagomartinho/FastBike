@@ -1,0 +1,14 @@
+FastBike permette ai gli utenti abbonati al servizio bike sharing Trento di trovare la bici a loro più vicina in modo immediato ed intuitivo.
+
+Con un semplice tocco è possibile:
+Trovare la stazione a te più vicina dove è possibile parcheggiare la bici;
+Trovare la stazione più a te più vicina dove sono presenti biciclette;
+Trovare indicazioni stradali per ogni stazione nella città di Trento;
+Riportare problemi riscontrati con le stazioni o le biciclette; 
+Visionare tutte le stazioni in unica e pratica mappa;
+
+Questo è un progetto open-source a cui puoi contribuire anche tu in:
+https://github.com/tiagomartinho/FastBike/
+
+Questa applicazione è il risultato del Hackathon “IEEE ISC2 Smart Cities” di Trento:
+http://ict4g.org/sc-hackathon/
