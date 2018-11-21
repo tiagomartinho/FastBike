@@ -8,7 +8,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
     var bikeStations = [BikeStation]()
     var location: CLLocation?
     var mapZoomSet = false
-    @IBOutlet var reportButton: UIButton!
     @IBOutlet var bikeButton: UIButton!
     @IBOutlet var parkButton: UIButton!
 
@@ -17,22 +16,17 @@ class ViewController: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
         getBikeStations()
         getUserPosition()
-        Analytics.track(screen: "Main View")
-        reportButton.isHidden = true
-        reportButton.setImage(#imageLiteral(resourceName: "lavoripiena"), for: .highlighted)
         bikeButton.setImage(#imageLiteral(resourceName: "bicipiena"), for: .highlighted)
         parkButton.setImage(#imageLiteral(resourceName: "Parcheggiopiena"), for: .highlighted)
     }
 
     @IBAction func findNearestBike() {
         let nearestBike = BikeStationFinder.nearestBike(location: location, bikeStations: bikeStations)
-        track(action: "Station", bikeStation: nearestBike, location: location)
         openMaps(destination: nearestBike)
     }
 
     @IBAction func findNearestStation() {
         let nearestStation = BikeStationFinder.nearestStation(location: location, bikeStations: bikeStations)
-        track(action: "Station", bikeStation: nearestStation, location: location)
         openMaps(destination: nearestStation)
     }
 
@@ -43,15 +37,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
         } else {
             AlertUtilities.showErrorAlert(viewController: self, message: "Per usare l'applicazione devi permettere l'uso della tua posizione", action: "Attiva posizione")
         }
-    }
-
-    func track(action: String, bikeStation: BikeStation?, location: CLLocation?) {
-        let user = location?.stringValue() ?? ""
-        let bike = bikeStation?.location.stringValue() ?? ""
-        let label = "\(user) -> \(bike)"
-        Analytics.track(category: "Get Directions",
-                        action: "Find Nearest \(action)",
-                        label: label)
     }
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

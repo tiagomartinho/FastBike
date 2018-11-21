@@ -15,8 +15,6 @@
 		EA04C8311D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8301D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift */; };
 		EA04C8331D8853B700C98C41 /* AlertUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8321D8853B700C98C41 /* AlertUtilities.swift */; };
 		EA04C8351D88559900C98C41 /* MapsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8341D88559900C98C41 /* MapsUtilities.swift */; };
-		EA04C83A1D8864AD00C98C41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA04C8391D8864AD00C98C41 /* GoogleService-Info.plist */; };
-		EA04C83C1D887BDC00C98C41 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C83B1D887BDC00C98C41 /* Analytics.swift */; };
 		EA04C8431D88894000C98C41 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA04C8411D88894000C98C41 /* Interface.storyboard */; };
 		EA04C8451D88894000C98C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA04C8441D88894000C98C41 /* Assets.xcassets */; };
 		EA04C84C1D88894000C98C41 /* FastBikeWatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA04C84B1D88894000C98C41 /* FastBikeWatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -31,12 +29,10 @@
 		EA04C8681D889B6000C98C41 /* MapsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8341D88559900C98C41 /* MapsUtilities.swift */; };
 		EA04C86B1D889C0A00C98C41 /* InterfaceController+CLManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C86A1D889C0A00C98C41 /* InterfaceController+CLManagerDelegate.swift */; };
 		EA04C86D1D889C7400C98C41 /* AlertUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C86C1D889C7400C98C41 /* AlertUtilities.swift */; };
-		EA2037B41D8943B70043DA05 /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2037B31D8943B70043DA05 /* ReportController.swift */; };
 		EA2840CA1D88159000BCE287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840C91D88159000BCE287 /* AppDelegate.swift */; };
 		EA2840CC1D88159000BCE287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840CB1D88159000BCE287 /* ViewController.swift */; };
 		EA2840CF1D88159000BCE287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2840CD1D88159000BCE287 /* Main.storyboard */; };
 		EA2840D41D88159000BCE287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2840D21D88159000BCE287 /* LaunchScreen.storyboard */; };
-		EA2840EA1D88159000BCE287 /* FastBikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840E91D88159000BCE287 /* FastBikeUITests.swift */; };
 		EAC6A2F31D88255A0035A62A /* BikeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6A2F21D88255A0035A62A /* BikeStation.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,8 +101,6 @@
 		EA04C8321D8853B700C98C41 /* AlertUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtilities.swift; sourceTree = "<group>"; };
 		EA04C8341D88559900C98C41 /* MapsUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsUtilities.swift; sourceTree = "<group>"; };
 		EA04C8361D8863BC00C98C41 /* FastBike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastBike-Bridging-Header.h"; sourceTree = "<group>"; };
-		EA04C8391D8864AD00C98C41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EA04C83B1D887BDC00C98C41 /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		EA04C83F1D88894000C98C41 /* FastBikeWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastBikeWatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA04C8421D88894000C98C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		EA04C8441D88894000C98C41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,7 +114,6 @@
 		EA04C8641D88968600C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		EA04C86A1D889C0A00C98C41 /* InterfaceController+CLManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InterfaceController+CLManagerDelegate.swift"; sourceTree = "<group>"; };
 		EA04C86C1D889C7400C98C41 /* AlertUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtilities.swift; sourceTree = "<group>"; };
-		EA2037B31D8943B70043DA05 /* ReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportController.swift; sourceTree = "<group>"; };
 		EA2840C61D88159000BCE287 /* FastBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2840C91D88159000BCE287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA2840CB1D88159000BCE287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +124,6 @@
 		EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationFinderTests.swift; sourceTree = "<group>"; };
 		EA2840E01D88159000BCE287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA2840E51D88159000BCE287 /* FastBikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastBikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA2840E91D88159000BCE287 /* FastBikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastBikeUITests.swift; sourceTree = "<group>"; };
 		EA2840EB1D88159000BCE287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC6A2F21D88255A0035A62A /* BikeStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -246,9 +238,7 @@
 				EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */,
 				EA04C8321D8853B700C98C41 /* AlertUtilities.swift */,
 				EA04C8341D88559900C98C41 /* MapsUtilities.swift */,
-				EA04C83B1D887BDC00C98C41 /* Analytics.swift */,
 				EAC6A2F61D8825990035A62A /* Supporting Files */,
-				EA2037B31D8943B70043DA05 /* ReportController.swift */,
 			);
 			path = FastBike;
 			sourceTree = "<group>";
@@ -265,7 +255,6 @@
 		EA2840E81D88159000BCE287 /* FastBikeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EA2840E91D88159000BCE287 /* FastBikeUITests.swift */,
 				EA2840EB1D88159000BCE287 /* Info.plist */,
 			);
 			path = FastBikeUITests;
@@ -274,7 +263,6 @@
 		EAC6A2F61D8825990035A62A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EA04C8391D8864AD00C98C41 /* GoogleService-Info.plist */,
 				EA2840C91D88159000BCE287 /* AppDelegate.swift */,
 				EA04C8361D8863BC00C98C41 /* FastBike-Bridging-Header.h */,
 				EA2840D21D88159000BCE287 /* LaunchScreen.storyboard */,
@@ -475,7 +463,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2840D41D88159000BCE287 /* LaunchScreen.storyboard in Resources */,
-				EA04C83A1D8864AD00C98C41 /* GoogleService-Info.plist in Resources */,
 				C554DDA81D887DAB00D75679 /* Assets.xcassets in Resources */,
 				EA2840CF1D88159000BCE287 /* Main.storyboard in Resources */,
 			);
@@ -525,8 +512,6 @@
 				EA04C82F1D88528600C98C41 /* ViewController+BikeStationService.swift in Sources */,
 				EAC6A2F31D88255A0035A62A /* BikeStation.swift in Sources */,
 				EA04C82D1D884FB800C98C41 /* BikeStationFinder.swift in Sources */,
-				EA04C83C1D887BDC00C98C41 /* Analytics.swift in Sources */,
-				EA2037B41D8943B70043DA05 /* ReportController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +527,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA2840EA1D88159000BCE287 /* FastBikeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
