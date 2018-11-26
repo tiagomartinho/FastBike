@@ -10,7 +10,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     var mapZoomSet = false
     @IBOutlet var bikeButton: UIButton!
     @IBOutlet var parkButton: UIButton!
-    lazy var service: BikeStationService? = TrentoBikeStationService(controller: self)
+    lazy var service: BikeStationService? = TrentoBikeStationService(delegate: self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +59,18 @@ class ViewController: UIViewController, MKMapViewDelegate {
         openMaps(destination: view.annotation as? BikeStation)
     }
 }
+
+extension ViewController: BikeStationServiceDelegate {
+    func set(bikeStations: [BikeStation]){
+        bikeStations.forEach{ bikeStation in
+            self.bikeStations.append(bikeStation)
+            DispatchQueue.main.async {
+                self.mapView.addAnnotation(bikeStation)
+            }
+        }
+    }
+}
+
 
 extension CLLocation {
     func stringValue() -> String {

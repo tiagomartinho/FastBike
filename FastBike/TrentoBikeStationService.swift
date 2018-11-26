@@ -2,10 +2,10 @@ import Foundation
 
 class TrentoBikeStationService: BikeStationService {
 
-    let controller: ViewController
+    weak var delegate: BikeStationServiceDelegate?
 
-    init(controller: ViewController) {
-        self.controller = controller
+    init(delegate: BikeStationServiceDelegate) {
+        self.delegate = delegate
     }
 
     func getStations() {
@@ -46,12 +46,8 @@ class TrentoBikeStationService: BikeStationService {
         return .none
     }
 
-    private func populateBikeStations(with json: [[String:AnyObject]]) {
-        json.map{ BikeStation(json: $0) }.forEach{ bikeStation in
-            self.controller.bikeStations.append(bikeStation)
-            DispatchQueue.main.async {
-                self.controller.mapView.addAnnotation(bikeStation)
-            }
-        }
+    func populateBikeStations(with json: [[String:AnyObject]]) {
+        let bikeStations = json.map{ BikeStation(json: $0) }
+        self.delegate?.set(bikeStations: bikeStations)
     }
 }
