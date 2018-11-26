@@ -1,0 +1,3 @@
+protocol BikeStationService {
+    func getStations()
+}

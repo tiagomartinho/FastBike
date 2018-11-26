@@ -10,14 +10,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
     var mapZoomSet = false
     @IBOutlet var bikeButton: UIButton!
     @IBOutlet var parkButton: UIButton!
+    lazy var service: BikeStationService? = TrentoBikeStationService(controller: self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapView.delegate = self
-        getBikeStations()
+        mapView?.delegate = self
+        service?.getStations()
         getUserPosition()
-        bikeButton.setImage(#imageLiteral(resourceName: "bicipiena"), for: .highlighted)
-        parkButton.setImage(#imageLiteral(resourceName: "Parcheggiopiena"), for: .highlighted)
+        bikeButton?.setImage(#imageLiteral(resourceName: "bicipiena"), for: .highlighted)
+        parkButton?.setImage(#imageLiteral(resourceName: "Parcheggiopiena"), for: .highlighted)
     }
 
     @IBAction func findNearestBike() {

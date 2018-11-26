@@ -1,7 +1,14 @@
 import Foundation
 
-extension ViewController {
-    func getBikeStations() {
+class TrentoBikeStationService: BikeStationService {
+
+    let controller: ViewController
+
+    init(controller: ViewController) {
+        self.controller = controller
+    }
+
+    func getStations() {
         let url = URL(string: "https://os.smartcommunitylab.it/core.mobility/bikesharing/trento")!
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let task = session.dataTask(with: url, completionHandler: self.handleResponse)
@@ -41,9 +48,9 @@ extension ViewController {
 
     private func populateBikeStations(with json: [[String:AnyObject]]) {
         json.map{ BikeStation(json: $0) }.forEach{ bikeStation in
-            self.bikeStations.append(bikeStation)
+            self.controller.bikeStations.append(bikeStation)
             DispatchQueue.main.async {
-                self.mapView.addAnnotation(bikeStation)
+                self.controller.mapView.addAnnotation(bikeStation)
             }
         }
     }

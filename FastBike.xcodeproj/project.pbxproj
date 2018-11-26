@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244A586221AC725E00A0403C /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A586121AC725E00A0403C /* ViewControllerTest.swift */; };
+		244A586421AC743800A0403C /* BikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A586321AC743800A0403C /* BikeStationService.swift */; };
 		95BA99001D8C6F73005905FB /* BikeStationFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */; };
 		C554DDA81D887DAB00D75679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C554DDA71D887DAB00D75679 /* Assets.xcassets */; };
 		EA04C82B1D8839FB00C98C41 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA04C82A1D8839FB00C98C41 /* MapKit.framework */; };
 		EA04C82D1D884FB800C98C41 /* BikeStationFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */; };
-		EA04C82F1D88528600C98C41 /* ViewController+BikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C82E1D88528600C98C41 /* ViewController+BikeStationService.swift */; };
+		EA04C82F1D88528600C98C41 /* TrentoBikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C82E1D88528600C98C41 /* TrentoBikeStationService.swift */; };
 		EA04C8311D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8301D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift */; };
 		EA04C8331D8853B700C98C41 /* AlertUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8321D8853B700C98C41 /* AlertUtilities.swift */; };
 		EA04C8351D88559900C98C41 /* MapsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8341D88559900C98C41 /* MapsUtilities.swift */; };
@@ -93,10 +95,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		244A586121AC725E00A0403C /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		244A586321AC743800A0403C /* BikeStationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationService.swift; sourceTree = "<group>"; };
 		C554DDA71D887DAB00D75679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA04C82A1D8839FB00C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStationFinder.swift; sourceTree = "<group>"; };
-		EA04C82E1D88528600C98C41 /* ViewController+BikeStationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+BikeStationService.swift"; sourceTree = "<group>"; };
+		EA04C82E1D88528600C98C41 /* TrentoBikeStationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrentoBikeStationService.swift; sourceTree = "<group>"; };
 		EA04C8301D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
 		EA04C8321D8853B700C98C41 /* AlertUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtilities.swift; sourceTree = "<group>"; };
 		EA04C8341D88559900C98C41 /* MapsUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsUtilities.swift; sourceTree = "<group>"; };
@@ -232,13 +236,14 @@
 			children = (
 				EA2840CD1D88159000BCE287 /* Main.storyboard */,
 				EA2840CB1D88159000BCE287 /* ViewController.swift */,
-				EA04C82E1D88528600C98C41 /* ViewController+BikeStationService.swift */,
 				EA04C8301D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift */,
 				EAC6A2F21D88255A0035A62A /* BikeStation.swift */,
 				EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */,
 				EA04C8321D8853B700C98C41 /* AlertUtilities.swift */,
 				EA04C8341D88559900C98C41 /* MapsUtilities.swift */,
 				EAC6A2F61D8825990035A62A /* Supporting Files */,
+				244A586321AC743800A0403C /* BikeStationService.swift */,
+				EA04C82E1D88528600C98C41 /* TrentoBikeStationService.swift */,
 			);
 			path = FastBike;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 			children = (
 				EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */,
 				EA2840E01D88159000BCE287 /* Info.plist */,
+				244A586121AC725E00A0403C /* ViewControllerTest.swift */,
 			);
 			path = FastBikeTests;
 			sourceTree = "<group>";
@@ -506,10 +512,11 @@
 			files = (
 				EA2840CC1D88159000BCE287 /* ViewController.swift in Sources */,
 				EA04C8311D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift in Sources */,
+				244A586421AC743800A0403C /* BikeStationService.swift in Sources */,
 				EA2840CA1D88159000BCE287 /* AppDelegate.swift in Sources */,
 				EA04C8351D88559900C98C41 /* MapsUtilities.swift in Sources */,
 				EA04C8331D8853B700C98C41 /* AlertUtilities.swift in Sources */,
-				EA04C82F1D88528600C98C41 /* ViewController+BikeStationService.swift in Sources */,
+				EA04C82F1D88528600C98C41 /* TrentoBikeStationService.swift in Sources */,
 				EAC6A2F31D88255A0035A62A /* BikeStation.swift in Sources */,
 				EA04C82D1D884FB800C98C41 /* BikeStationFinder.swift in Sources */,
 			);
@@ -519,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244A586221AC725E00A0403C /* ViewControllerTest.swift in Sources */,
 				95BA99001D8C6F73005905FB /* BikeStationFinderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
