@@ -11,6 +11,7 @@
 		244A586421AC743800A0403C /* BikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A586321AC743800A0403C /* BikeStationService.swift */; };
 		244A586621AC7FE700A0403C /* BikeStationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A586521AC7FE700A0403C /* BikeStationServiceTest.swift */; };
 		244A586821AC831400A0403C /* BikeStationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A586721AC831400A0403C /* BikeStationServiceDelegate.swift */; };
+		245CCA6821B83DF30094E5CC /* IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245CCA6721B83DF30094E5CC /* IntegrationTests.swift */; };
 		95BA99001D8C6F73005905FB /* BikeStationFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */; };
 		C554DDA81D887DAB00D75679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C554DDA71D887DAB00D75679 /* Assets.xcassets */; };
 		EA04C82B1D8839FB00C98C41 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA04C82A1D8839FB00C98C41 /* MapKit.framework */; };
@@ -41,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		245CCA6A21B83DF30094E5CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA2840BE1D88159000BCE287 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA2840C51D88159000BCE287;
+			remoteInfo = FastBike;
+		};
 		EA04C84D1D88894000C98C41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EA2840BE1D88159000BCE287 /* Project object */;
@@ -56,13 +64,6 @@
 			remoteInfo = FastBikeWatchOS;
 		};
 		EA2840DB1D88159000BCE287 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EA2840BE1D88159000BCE287 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA2840C51D88159000BCE287;
-			remoteInfo = FastBike;
-		};
-		EA2840E61D88159000BCE287 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EA2840BE1D88159000BCE287 /* Project object */;
 			proxyType = 1;
@@ -101,6 +102,9 @@
 		244A586321AC743800A0403C /* BikeStationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationService.swift; sourceTree = "<group>"; };
 		244A586521AC7FE700A0403C /* BikeStationServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationServiceTest.swift; sourceTree = "<group>"; };
 		244A586721AC831400A0403C /* BikeStationServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationServiceDelegate.swift; sourceTree = "<group>"; };
+		245CCA6521B83DF30094E5CC /* IntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		245CCA6721B83DF30094E5CC /* IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTests.swift; sourceTree = "<group>"; };
+		245CCA6921B83DF30094E5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C554DDA71D887DAB00D75679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA04C82A1D8839FB00C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStationFinder.swift; sourceTree = "<group>"; };
@@ -131,12 +135,17 @@
 		EA2840DA1D88159000BCE287 /* FastBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationFinderTests.swift; sourceTree = "<group>"; };
 		EA2840E01D88159000BCE287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA2840E51D88159000BCE287 /* FastBikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastBikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA2840EB1D88159000BCE287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC6A2F21D88255A0035A62A /* BikeStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		245CCA6221B83DF30094E5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DA09994C52514DDB58BC668 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,16 +176,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA2840E21D88159000BCE287 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		245CCA6621B83DF30094E5CC /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				245CCA6721B83DF30094E5CC /* IntegrationTests.swift */,
+				245CCA6921B83DF30094E5CC /* Info.plist */,
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
 		8D9AAC3DA767BC4862B5ACE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,9 +226,9 @@
 			children = (
 				EA2840C81D88159000BCE287 /* FastBike */,
 				EA2840DD1D88159000BCE287 /* FastBikeTests */,
-				EA2840E81D88159000BCE287 /* FastBikeUITests */,
 				EA04C8401D88894000C98C41 /* FastBikeWatchOS */,
 				EA04C84F1D88894000C98C41 /* FastBikeWatchOS Extension */,
+				245CCA6621B83DF30094E5CC /* IntegrationTests */,
 				EA2840C71D88159000BCE287 /* Products */,
 				8D9AAC3DA767BC4862B5ACE0 /* Frameworks */,
 			);
@@ -228,9 +239,9 @@
 			children = (
 				EA2840C61D88159000BCE287 /* FastBike.app */,
 				EA2840DA1D88159000BCE287 /* FastBikeTests.xctest */,
-				EA2840E51D88159000BCE287 /* FastBikeUITests.xctest */,
 				EA04C83F1D88894000C98C41 /* FastBikeWatchOS.app */,
 				EA04C84B1D88894000C98C41 /* FastBikeWatchOS Extension.appex */,
+				245CCA6521B83DF30094E5CC /* IntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,14 +275,6 @@
 			path = FastBikeTests;
 			sourceTree = "<group>";
 		};
-		EA2840E81D88159000BCE287 /* FastBikeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EA2840EB1D88159000BCE287 /* Info.plist */,
-			);
-			path = FastBikeUITests;
-			sourceTree = "<group>";
-		};
 		EAC6A2F61D8825990035A62A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +290,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		245CCA6421B83DF30094E5CC /* IntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 245CCA6E21B83DF30094E5CC /* Build configuration list for PBXNativeTarget "IntegrationTests" */;
+			buildPhases = (
+				245CCA6121B83DF30094E5CC /* Sources */,
+				245CCA6221B83DF30094E5CC /* Frameworks */,
+				245CCA6321B83DF30094E5CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				245CCA6B21B83DF30094E5CC /* PBXTargetDependency */,
+			);
+			name = IntegrationTests;
+			productName = IntegrationTests;
+			productReference = 245CCA6521B83DF30094E5CC /* IntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EA04C83E1D88894000C98C41 /* FastBikeWatchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA04C8621D88894000C98C41 /* Build configuration list for PBXNativeTarget "FastBikeWatchOS" */;
@@ -359,34 +380,22 @@
 			productReference = EA2840DA1D88159000BCE287 /* FastBikeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EA2840E41D88159000BCE287 /* FastBikeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA2840F41D88159000BCE287 /* Build configuration list for PBXNativeTarget "FastBikeUITests" */;
-			buildPhases = (
-				EA2840E11D88159000BCE287 /* Sources */,
-				EA2840E21D88159000BCE287 /* Frameworks */,
-				EA2840E31D88159000BCE287 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA2840E71D88159000BCE287 /* PBXTargetDependency */,
-			);
-			name = FastBikeUITests;
-			productName = FastBikeUITests;
-			productReference = EA2840E51D88159000BCE287 /* FastBikeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EA2840BE1D88159000BCE287 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = tm;
 				TargetAttributes = {
+					245CCA6421B83DF30094E5CC = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 4C34FT6ABU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA2840C51D88159000BCE287;
+					};
 					EA04C83E1D88894000C98C41 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4C34FT6ABU;
@@ -421,13 +430,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = EA2840C51D88159000BCE287;
 					};
-					EA2840E41D88159000BCE287 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = NX6S46A5Z4;
-						LastSwiftMigration = 1010;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EA2840C51D88159000BCE287;
-					};
 				};
 			};
 			buildConfigurationList = EA2840C11D88159000BCE287 /* Build configuration list for PBXProject "FastBike" */;
@@ -445,14 +447,21 @@
 			targets = (
 				EA2840C51D88159000BCE287 /* FastBike */,
 				EA2840D91D88159000BCE287 /* FastBikeTests */,
-				EA2840E41D88159000BCE287 /* FastBikeUITests */,
 				EA04C83E1D88894000C98C41 /* FastBikeWatchOS */,
 				EA04C84A1D88894000C98C41 /* FastBikeWatchOS Extension */,
+				245CCA6421B83DF30094E5CC /* IntegrationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		245CCA6321B83DF30094E5CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA04C83D1D88894000C98C41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,16 +496,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA2840E31D88159000BCE287 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		245CCA6121B83DF30094E5CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245CCA6821B83DF30094E5CC /* IntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA04C8471D88894000C98C41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,16 +549,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA2840E11D88159000BCE287 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		245CCA6B21B83DF30094E5CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA2840C51D88159000BCE287 /* FastBike */;
+			targetProxy = 245CCA6A21B83DF30094E5CC /* PBXContainerItemProxy */;
+		};
 		EA04C84E1D88894000C98C41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EA04C84A1D88894000C98C41 /* FastBikeWatchOS Extension */;
@@ -563,11 +571,6 @@
 			isa = PBXTargetDependency;
 			target = EA2840C51D88159000BCE287 /* FastBike */;
 			targetProxy = EA2840DB1D88159000BCE287 /* PBXContainerItemProxy */;
-		};
-		EA2840E71D88159000BCE287 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EA2840C51D88159000BCE287 /* FastBike */;
-			targetProxy = EA2840E61D88159000BCE287 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -599,6 +602,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		245CCA6C21B83DF30094E5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IntegrationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.IntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastBike.app/FastBike";
+			};
+			name = Debug;
+		};
+		245CCA6D21B83DF30094E5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IntegrationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.IntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastBike.app/FastBike";
+			};
+			name = Release;
+		};
 		EA04C85C1D88894000C98C41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -839,35 +891,18 @@
 			};
 			name = Release;
 		};
-		EA2840F51D88159000BCE287 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
-				INFOPLIST_FILE = FastBikeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBikeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = FastBike;
-			};
-			name = Debug;
-		};
-		EA2840F61D88159000BCE287 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = NX6S46A5Z4;
-				INFOPLIST_FILE = FastBikeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.FastBikeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = FastBike;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		245CCA6E21B83DF30094E5CC /* Build configuration list for PBXNativeTarget "IntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245CCA6C21B83DF30094E5CC /* Debug */,
+				245CCA6D21B83DF30094E5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EA04C8601D88894000C98C41 /* Build configuration list for PBXNativeTarget "FastBikeWatchOS Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -909,15 +944,6 @@
 			buildConfigurations = (
 				EA2840F21D88159000BCE287 /* Debug */,
 				EA2840F31D88159000BCE287 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA2840F41D88159000BCE287 /* Build configuration list for PBXNativeTarget "FastBikeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA2840F51D88159000BCE287 /* Debug */,
-				EA2840F61D88159000BCE287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
