@@ -3,7 +3,7 @@ import XCTest
 
 class ViewControllerTests: XCTestCase {
     func testDelegateGetBikeStationsToBikeStationService() {
-        let controller = ViewController()
+        let controller = BikeMapViewController()
         let service = SpyBikeStationService()
         controller.service = service
 

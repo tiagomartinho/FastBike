@@ -1,7 +1,7 @@
 import CoreLocation
 import MapKit
 
-extension ViewController: CLLocationManagerDelegate {
+extension BikeMapViewController: CLLocationManagerDelegate {
     func getUserPosition() {
         locationManager.requestWhenInUseAuthorization()
 

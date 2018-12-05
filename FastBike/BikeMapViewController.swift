@@ -1,7 +1,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class BikeMapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
@@ -60,7 +60,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
 }
 
-extension ViewController: BikeStationServiceDelegate {
+extension BikeMapViewController: BikeStationServiceDelegate {
     func set(bikeStations: [BikeStation]){
         bikeStations.forEach{ bikeStation in
             self.bikeStations.append(bikeStation)
