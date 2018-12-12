@@ -14,6 +14,7 @@ class ViewControllerTests: XCTestCase {
 
     class SpyBikeStationService: BikeStationService {
 
+        var delegate: BikeStationServiceDelegate?
         var getBikeStationsWasCalled = false
 
         func getStations() {

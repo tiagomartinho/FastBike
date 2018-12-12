@@ -16,6 +16,7 @@ class TrentinoBikeStationServiceTest: XCTestCase {
 
     class MockBikeStationService: BikeStationService {
 
+        var delegate: BikeStationServiceDelegate?
         var getStationsCalled = false
 
         func getStations() {
@@ -28,7 +29,8 @@ class TrentinoBikeStationServiceTest: XCTestCase {
 class TrentinoBikeStationService: BikeStationService {
 
     let services: [BikeStationService]
-
+    weak var delegate: BikeStationServiceDelegate?
+    
     init(services: BikeStationService...) {
         self.services = services
     }
