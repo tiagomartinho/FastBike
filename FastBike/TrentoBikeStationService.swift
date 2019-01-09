@@ -2,13 +2,10 @@ import Foundation
 
 class TrentoBikeStationService: BikeStationService {
 
-    weak var delegate: BikeStationServiceDelegate?
+    private weak var delegate: BikeStationServiceDelegate?
 
-    init(delegate: BikeStationServiceDelegate) {
+    func getStations(delegate: BikeStationServiceDelegate) {
         self.delegate = delegate
-    }
-
-    func getStations() {
         let url = URL(string: "https://os.smartcommunitylab.it/core.mobility/bikesharing/trento")!
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let task = session.dataTask(with: url, completionHandler: self.handleResponse)
@@ -42,7 +39,6 @@ class TrentoBikeStationService: BikeStationService {
         if let rawJson = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) {
             return rawJson as? [[String:AnyObject]]
         }
-        
         return .none
     }
 

@@ -7,9 +7,9 @@ class TrentinoBikeStationServiceTest: XCTestCase {
         let delegate = MockBikeStationServiceDelegate()
         let firstService = MockBikeStationService()
         let secondService = MockBikeStationService()
-        let service = TrentinoBikeStationService(delegate: delegate, services: firstService, secondService)
+        let service = TrentinoBikeStationService(services: firstService, secondService)
 
-        service.getStations()
+        service.getStations(delegate: delegate)
 
         XCTAssert(firstService.getStationsCalled)
         XCTAssert(secondService.getStationsCalled)
@@ -17,7 +17,8 @@ class TrentinoBikeStationServiceTest: XCTestCase {
 
     func testNotifyDelegateWhenSettingBikeStations() {
         let delegate = MockBikeStationServiceDelegate()
-        let service = TrentinoBikeStationService(delegate: delegate)
+        let service = TrentinoBikeStationService()
+        service.getStations(delegate: delegate)
 
         service.set(bikeStations: [BikeStation(json: [:])])
 
@@ -34,10 +35,9 @@ class TrentinoBikeStationServiceTest: XCTestCase {
 
     class MockBikeStationService: BikeStationService {
 
-        var delegate: BikeStationServiceDelegate?
         var getStationsCalled = false
 
-        func getStations() {
+        func getStations(delegate: BikeStationServiceDelegate) {
             getStationsCalled = true
         }
     }
@@ -46,15 +46,15 @@ class TrentinoBikeStationServiceTest: XCTestCase {
 class TrentinoBikeStationService: BikeStationService, BikeStationServiceDelegate {
 
     private let services: [BikeStationService]
-    weak var delegate: BikeStationServiceDelegate?
+    private weak var delegate: BikeStationServiceDelegate?
     
-    init(delegate: BikeStationServiceDelegate, services: BikeStationService...) {
-        self.delegate = delegate
+    init(services: BikeStationService...) {
         self.services = services
     }
 
-    func getStations() {
-        services.forEach { $0.getStations() }
+    func getStations(delegate: BikeStationServiceDelegate) {
+        self.delegate = delegate
+        services.forEach { $0.getStations(delegate: self) }
     }
 
     func set(bikeStations: [BikeStation]) {

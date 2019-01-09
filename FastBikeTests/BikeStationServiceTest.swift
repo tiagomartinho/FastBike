@@ -5,9 +5,11 @@ class BikeStationServiceTest: XCTestCase {
 
     func testPopulatingBikeService() {
         let controller = SpyBikeStationServiceDelegate()
-        let service = TrentoBikeStationService(delegate: controller)
+        let service = TrentoBikeStationService()
+        service.getStations(delegate: controller)
 
         service.populateBikeStations(with: [])
+        
         XCTAssert(controller.setBikeStationsCalled)
     }
 

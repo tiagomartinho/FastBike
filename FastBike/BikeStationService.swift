@@ -1,4 +1,3 @@
 protocol BikeStationService {
-    func getStations()
-    var delegate:BikeStationServiceDelegate? { get set }
+    func getStations(delegate: BikeStationServiceDelegate)
 }

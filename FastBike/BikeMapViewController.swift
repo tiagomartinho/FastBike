@@ -10,12 +10,12 @@ class BikeMapViewController: UIViewController, MKMapViewDelegate {
     var mapZoomSet = false
     @IBOutlet var bikeButton: UIButton!
     @IBOutlet var parkButton: UIButton!
-    lazy var service: BikeStationService? = TrentoBikeStationService(delegate: self)
+    lazy var service: BikeStationService? = TrentoBikeStationService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView?.delegate = self
-        service?.getStations()
+        service?.getStations(delegate: self)
         getUserPosition()
         bikeButton?.setImage(#imageLiteral(resourceName: "bicipiena"), for: .highlighted)
         parkButton?.setImage(#imageLiteral(resourceName: "Parcheggiopiena"), for: .highlighted)
