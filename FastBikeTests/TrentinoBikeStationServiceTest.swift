@@ -16,12 +16,10 @@ class TrentinoBikeStationServiceTest: XCTestCase {
     }
 
     func testNotifyDelegateWhenSettingBikeStations() {
-        let firstService = MockBikeStationService()
         let delegate = MockBikeStationServiceDelegate()
-        let bikeStations = [BikeStation(json: [:])]
-        let service = TrentinoBikeStationService(delegate: delegate, services: firstService)
+        let service = TrentinoBikeStationService(delegate: delegate)
 
-        service.set(bikeStations: bikeStations)
+        service.set(bikeStations: [BikeStation(json: [:])])
 
         XCTAssertFalse(delegate.bikeStations.isEmpty)
     }
