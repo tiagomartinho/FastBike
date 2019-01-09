@@ -47,7 +47,7 @@ class TrentinoBikeStationServiceTest: XCTestCase {
 
 class TrentinoBikeStationService: BikeStationService, BikeStationServiceDelegate {
 
-    let services: [BikeStationService]
+    private let services: [BikeStationService]
     weak var delegate: BikeStationServiceDelegate?
     
     init(delegate: BikeStationServiceDelegate, services: BikeStationService...) {
