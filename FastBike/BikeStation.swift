@@ -21,7 +21,7 @@ struct BikeStation: Equatable {
         self.location = CLLocation(latitude: positionArray[0],
                                    longitude: positionArray[1])
     }
-    
+
     init(name: String, address: String, id: String, bikes: Int, slots: Int, totalSlots: Int, location: CLLocation) {
         self.name = name
         self.address = address
@@ -31,4 +31,14 @@ struct BikeStation: Equatable {
         self.totalSlots = totalSlots
         self.location = location
     }
+}
+
+struct BikeStationNew: Equatable, Codable {
+    let name: String
+    let address: String
+    let id: String
+    let bikes: Int
+    let slots: Int
+    let totalSlots: Int
+    let position: [Double]
 }
