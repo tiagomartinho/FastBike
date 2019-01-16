@@ -41,7 +41,7 @@ class BikeMapViewController: UIViewController, MKMapViewDelegate {
     }
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        if annotation is BikeStation {
+        if annotation is BikeStationMKAnnotation {
             let annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "BikeStation")
             annotationView.canShowCallout = true
             annotationView.pinTintColor = #colorLiteral(red: 0.1568627451, green: 0.8039215686, blue: 0.9843137255, alpha: 1)
@@ -56,7 +56,7 @@ class BikeMapViewController: UIViewController, MKMapViewDelegate {
     }
 
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        openMaps(destination: view.annotation as? BikeStation)
+        openMaps(destination: (view.annotation as? BikeStationMKAnnotation)?.station)
     }
 }
 
@@ -65,7 +65,8 @@ extension BikeMapViewController: BikeStationServiceDelegate {
         bikeStations.forEach{ bikeStation in
             self.bikeStations.append(bikeStation)
             DispatchQueue.main.async {
-                self.mapView.addAnnotation(bikeStation)
+                let annotation = BikeStationMKAnnotation(station: bikeStation)
+                self.mapView.addAnnotation(annotation)
             }
         }
     }

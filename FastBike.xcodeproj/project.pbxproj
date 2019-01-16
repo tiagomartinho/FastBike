@@ -15,6 +15,7 @@
 		245CCA7021B85CFF0094E5CC /* BikeStationServiceAggregatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245CCA6F21B85CFF0094E5CC /* BikeStationServiceAggregatorTest.swift */; };
 		24893B9E21EF9DA300EF9F76 /* BikeStationServiceAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24893B9D21EF9DA300EF9F76 /* BikeStationServiceAggregator.swift */; };
 		24893BA021EFAA2300EF9F76 /* TrentinoBikeStationServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24893B9F21EFAA2300EF9F76 /* TrentinoBikeStationServiceFactory.swift */; };
+		24893BA221EFAF5C00EF9F76 /* BikeStationMKAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24893BA121EFAF5C00EF9F76 /* BikeStationMKAnnotation.swift */; };
 		95BA99001D8C6F73005905FB /* BikeStationFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */; };
 		C554DDA81D887DAB00D75679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C554DDA71D887DAB00D75679 /* Assets.xcassets */; };
 		EA04C82B1D8839FB00C98C41 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA04C82A1D8839FB00C98C41 /* MapKit.framework */; };
@@ -111,6 +112,7 @@
 		245CCA6F21B85CFF0094E5CC /* BikeStationServiceAggregatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationServiceAggregatorTest.swift; sourceTree = "<group>"; };
 		24893B9D21EF9DA300EF9F76 /* BikeStationServiceAggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationServiceAggregator.swift; sourceTree = "<group>"; };
 		24893B9F21EFAA2300EF9F76 /* TrentinoBikeStationServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrentinoBikeStationServiceFactory.swift; sourceTree = "<group>"; };
+		24893BA121EFAF5C00EF9F76 /* BikeStationMKAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationMKAnnotation.swift; sourceTree = "<group>"; };
 		C554DDA71D887DAB00D75679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA04C82A1D8839FB00C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStationFinder.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				EA2840CB1D88159000BCE287 /* BikeMapViewController.swift */,
 				EA04C8301D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift */,
 				EAC6A2F21D88255A0035A62A /* BikeStation.swift */,
+				24893BA121EFAF5C00EF9F76 /* BikeStationMKAnnotation.swift */,
 				EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */,
 				EA04C8321D8853B700C98C41 /* AlertUtilities.swift */,
 				EA04C8341D88559900C98C41 /* MapsUtilities.swift */,
@@ -536,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2840CC1D88159000BCE287 /* BikeMapViewController.swift in Sources */,
+				24893BA221EFAF5C00EF9F76 /* BikeStationMKAnnotation.swift in Sources */,
 				EA04C8311D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift in Sources */,
 				24893B9E21EF9DA300EF9F76 /* BikeStationServiceAggregator.swift in Sources */,
 				24893BA021EFAA2300EF9F76 /* TrentinoBikeStationServiceFactory.swift in Sources */,

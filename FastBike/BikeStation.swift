@@ -1,7 +1,7 @@
 import CoreLocation
-import MapKit
 
-class BikeStation: NSObject {
+struct BikeStation: Equatable {
+
     let name: String
     let address: String
     let id: String
@@ -10,7 +10,7 @@ class BikeStation: NSObject {
     let totalSlots: Int
     let location: CLLocation
 
-    required init(json: [String:AnyObject]) {
+    init(json: [String:AnyObject]) {
         self.name = (json["name"] as? String) ?? ""
         self.address = (json["address"] as? String) ?? ""
         self.id = (json["id"] as? String) ?? ""
@@ -30,20 +30,5 @@ class BikeStation: NSObject {
         self.slots = slots
         self.totalSlots = totalSlots
         self.location = location
-    }
-}
-
-extension BikeStation: MKAnnotation {
-
-    var coordinate: CLLocationCoordinate2D {
-        return location.coordinate
-    }
-
-    var title: String? { return name }
-
-    var subtitle: String? {
-        let availableBikes = "\(bikes) Bici"
-        let availableSlots = "\(slots)" + (slots == 1 ? " Posto" :  " Posti")
-        return availableBikes + ", " + availableSlots
     }
 }
