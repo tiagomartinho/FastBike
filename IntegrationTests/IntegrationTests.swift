@@ -6,7 +6,7 @@ class TrentoBikeStationServiceTest: XCTestCase {
     func testIfReturning() {
         let expectation = XCTestExpectation(description: "Waiting for network request")
         let delegate = TrentoBikeStationServiceDelegate(expectation: expectation)
-        let service = TrentoBikeStationService()
+        let service = TrentoBikeStationService(url: URL(string: "https://os.smartcommunitylab.it/core.mobility/bikesharing/lavis")!)
 
         service.getStations(delegate: delegate)
 

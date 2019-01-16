@@ -5,7 +5,7 @@ class TrentinoBikeStationService: BikeStationService, BikeStationServiceDelegate
     private let services: [BikeStationService]
     private weak var delegate: BikeStationServiceDelegate?
 
-    init(services: BikeStationService...) {
+    init(services: [BikeStationService]) {
         self.services = services
     }
 

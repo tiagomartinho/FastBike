@@ -1,12 +1,31 @@
 import Foundation
 
+class TrentinoBikeStationServiceFactory {
+
+    private static let endpoints = [
+        "lavis",
+        "trento"
+    ]
+    private static let baseEndpoint = "https://os.smartcommunitylab.it/core.mobility/bikesharing/"
+
+    static func get() -> [BikeStationService] {
+        return endpoints
+            .compactMap { URL(string: "\(baseEndpoint)\($0)") }
+            .compactMap { TrentoBikeStationService(url: $0) }
+    }
+}
+
 class TrentoBikeStationService: BikeStationService {
 
+    private let url:URL
     private weak var delegate: BikeStationServiceDelegate?
+
+    init(url:URL) {
+        self.url = url
+    }
 
     func getStations(delegate: BikeStationServiceDelegate) {
         self.delegate = delegate
-        let url = URL(string: "https://os.smartcommunitylab.it/core.mobility/bikesharing/trento")!
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let task = session.dataTask(with: url, completionHandler: self.handleResponse)
         task.resume()

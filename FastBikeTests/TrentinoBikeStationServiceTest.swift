@@ -7,7 +7,7 @@ class TrentinoBikeStationServiceTest: XCTestCase {
         let delegate = MockBikeStationServiceDelegate()
         let firstService = MockBikeStationService()
         let secondService = MockBikeStationService()
-        let service = TrentinoBikeStationService(services: firstService, secondService)
+        let service = TrentinoBikeStationService(services: [firstService, secondService])
 
         service.getStations(delegate: delegate)
 
@@ -17,7 +17,7 @@ class TrentinoBikeStationServiceTest: XCTestCase {
 
     func testNotifyDelegateWhenSettingBikeStations() {
         let delegate = MockBikeStationServiceDelegate()
-        let service = TrentinoBikeStationService()
+        let service = TrentinoBikeStationService(services: [])
         service.getStations(delegate: delegate)
 
         service.set(bikeStations: [BikeStation(json: [:])])

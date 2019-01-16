@@ -5,7 +5,7 @@ class BikeStationServiceTest: XCTestCase {
 
     func testPopulatingBikeService() {
         let controller = SpyBikeStationServiceDelegate()
-        let service = TrentoBikeStationService()
+        let service = TrentoBikeStationService(url: URL(string: "foo")!)
         service.getStations(delegate: controller)
 
         service.populateBikeStations(with: [])
