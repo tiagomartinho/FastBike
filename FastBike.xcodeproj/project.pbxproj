@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		244A586221AC725E00A0403C /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A586121AC725E00A0403C /* ViewControllerTest.swift */; };
 		244A586421AC743800A0403C /* BikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A586321AC743800A0403C /* BikeStationService.swift */; };
-		244A586621AC7FE700A0403C /* BikeStationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A586521AC7FE700A0403C /* BikeStationServiceTest.swift */; };
+		244A586621AC7FE700A0403C /* TrentinoBikeStationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A586521AC7FE700A0403C /* TrentinoBikeStationServiceTest.swift */; };
 		244A586821AC831400A0403C /* BikeStationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A586721AC831400A0403C /* BikeStationServiceDelegate.swift */; };
 		245CCA6821B83DF30094E5CC /* IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245CCA6721B83DF30094E5CC /* IntegrationTests.swift */; };
-		245CCA7021B85CFF0094E5CC /* TrentinoBikeStationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245CCA6F21B85CFF0094E5CC /* TrentinoBikeStationServiceTest.swift */; };
-		24893B9E21EF9DA300EF9F76 /* TrentinoBikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24893B9D21EF9DA300EF9F76 /* TrentinoBikeStationService.swift */; };
+		245CCA7021B85CFF0094E5CC /* BikeStationServiceAggregatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245CCA6F21B85CFF0094E5CC /* BikeStationServiceAggregatorTest.swift */; };
+		24893B9E21EF9DA300EF9F76 /* BikeStationServiceAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24893B9D21EF9DA300EF9F76 /* BikeStationServiceAggregator.swift */; };
+		24893BA021EFAA2300EF9F76 /* TrentinoBikeStationServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24893B9F21EFAA2300EF9F76 /* TrentinoBikeStationServiceFactory.swift */; };
 		95BA99001D8C6F73005905FB /* BikeStationFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */; };
 		C554DDA81D887DAB00D75679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C554DDA71D887DAB00D75679 /* Assets.xcassets */; };
 		EA04C82B1D8839FB00C98C41 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA04C82A1D8839FB00C98C41 /* MapKit.framework */; };
 		EA04C82D1D884FB800C98C41 /* BikeStationFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */; };
-		EA04C82F1D88528600C98C41 /* TrentoBikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C82E1D88528600C98C41 /* TrentoBikeStationService.swift */; };
+		EA04C82F1D88528600C98C41 /* TrentinoBikeStationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C82E1D88528600C98C41 /* TrentinoBikeStationService.swift */; };
 		EA04C8311D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8301D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift */; };
 		EA04C8331D8853B700C98C41 /* AlertUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8321D8853B700C98C41 /* AlertUtilities.swift */; };
 		EA04C8351D88559900C98C41 /* MapsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04C8341D88559900C98C41 /* MapsUtilities.swift */; };
@@ -102,17 +103,18 @@
 /* Begin PBXFileReference section */
 		244A586121AC725E00A0403C /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 		244A586321AC743800A0403C /* BikeStationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationService.swift; sourceTree = "<group>"; };
-		244A586521AC7FE700A0403C /* BikeStationServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationServiceTest.swift; sourceTree = "<group>"; };
+		244A586521AC7FE700A0403C /* TrentinoBikeStationServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrentinoBikeStationServiceTest.swift; sourceTree = "<group>"; };
 		244A586721AC831400A0403C /* BikeStationServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationServiceDelegate.swift; sourceTree = "<group>"; };
 		245CCA6521B83DF30094E5CC /* IntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		245CCA6721B83DF30094E5CC /* IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTests.swift; sourceTree = "<group>"; };
 		245CCA6921B83DF30094E5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		245CCA6F21B85CFF0094E5CC /* TrentinoBikeStationServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrentinoBikeStationServiceTest.swift; sourceTree = "<group>"; };
-		24893B9D21EF9DA300EF9F76 /* TrentinoBikeStationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrentinoBikeStationService.swift; sourceTree = "<group>"; };
+		245CCA6F21B85CFF0094E5CC /* BikeStationServiceAggregatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationServiceAggregatorTest.swift; sourceTree = "<group>"; };
+		24893B9D21EF9DA300EF9F76 /* BikeStationServiceAggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationServiceAggregator.swift; sourceTree = "<group>"; };
+		24893B9F21EFAA2300EF9F76 /* TrentinoBikeStationServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrentinoBikeStationServiceFactory.swift; sourceTree = "<group>"; };
 		C554DDA71D887DAB00D75679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA04C82A1D8839FB00C98C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA04C82C1D884FB800C98C41 /* BikeStationFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStationFinder.swift; sourceTree = "<group>"; };
-		EA04C82E1D88528600C98C41 /* TrentoBikeStationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrentoBikeStationService.swift; sourceTree = "<group>"; };
+		EA04C82E1D88528600C98C41 /* TrentinoBikeStationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrentinoBikeStationService.swift; sourceTree = "<group>"; };
 		EA04C8301D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
 		EA04C8321D8853B700C98C41 /* AlertUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtilities.swift; sourceTree = "<group>"; };
 		EA04C8341D88559900C98C41 /* MapsUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsUtilities.swift; sourceTree = "<group>"; };
@@ -262,9 +264,10 @@
 				EA04C8341D88559900C98C41 /* MapsUtilities.swift */,
 				EAC6A2F61D8825990035A62A /* Supporting Files */,
 				244A586321AC743800A0403C /* BikeStationService.swift */,
-				EA04C82E1D88528600C98C41 /* TrentoBikeStationService.swift */,
+				EA04C82E1D88528600C98C41 /* TrentinoBikeStationService.swift */,
+				24893B9F21EFAA2300EF9F76 /* TrentinoBikeStationServiceFactory.swift */,
 				244A586721AC831400A0403C /* BikeStationServiceDelegate.swift */,
-				24893B9D21EF9DA300EF9F76 /* TrentinoBikeStationService.swift */,
+				24893B9D21EF9DA300EF9F76 /* BikeStationServiceAggregator.swift */,
 			);
 			path = FastBike;
 			sourceTree = "<group>";
@@ -275,8 +278,8 @@
 				EA2840DE1D88159000BCE287 /* BikeStationFinderTests.swift */,
 				EA2840E01D88159000BCE287 /* Info.plist */,
 				244A586121AC725E00A0403C /* ViewControllerTest.swift */,
-				244A586521AC7FE700A0403C /* BikeStationServiceTest.swift */,
-				245CCA6F21B85CFF0094E5CC /* TrentinoBikeStationServiceTest.swift */,
+				244A586521AC7FE700A0403C /* TrentinoBikeStationServiceTest.swift */,
+				245CCA6F21B85CFF0094E5CC /* BikeStationServiceAggregatorTest.swift */,
 			);
 			path = FastBikeTests;
 			sourceTree = "<group>";
@@ -534,12 +537,13 @@
 			files = (
 				EA2840CC1D88159000BCE287 /* BikeMapViewController.swift in Sources */,
 				EA04C8311D8852DC00C98C41 /* ViewController+CLLocationManagerDelegate.swift in Sources */,
-				24893B9E21EF9DA300EF9F76 /* TrentinoBikeStationService.swift in Sources */,
+				24893B9E21EF9DA300EF9F76 /* BikeStationServiceAggregator.swift in Sources */,
+				24893BA021EFAA2300EF9F76 /* TrentinoBikeStationServiceFactory.swift in Sources */,
 				244A586421AC743800A0403C /* BikeStationService.swift in Sources */,
 				EA2840CA1D88159000BCE287 /* AppDelegate.swift in Sources */,
 				EA04C8351D88559900C98C41 /* MapsUtilities.swift in Sources */,
 				EA04C8331D8853B700C98C41 /* AlertUtilities.swift in Sources */,
-				EA04C82F1D88528600C98C41 /* TrentoBikeStationService.swift in Sources */,
+				EA04C82F1D88528600C98C41 /* TrentinoBikeStationService.swift in Sources */,
 				EAC6A2F31D88255A0035A62A /* BikeStation.swift in Sources */,
 				244A586821AC831400A0403C /* BikeStationServiceDelegate.swift in Sources */,
 				EA04C82D1D884FB800C98C41 /* BikeStationFinder.swift in Sources */,
@@ -550,8 +554,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				245CCA7021B85CFF0094E5CC /* TrentinoBikeStationServiceTest.swift in Sources */,
-				244A586621AC7FE700A0403C /* BikeStationServiceTest.swift in Sources */,
+				245CCA7021B85CFF0094E5CC /* BikeStationServiceAggregatorTest.swift in Sources */,
+				244A586621AC7FE700A0403C /* TrentinoBikeStationServiceTest.swift in Sources */,
 				244A586221AC725E00A0403C /* ViewControllerTest.swift in Sources */,
 				95BA99001D8C6F73005905FB /* BikeStationFinderTests.swift in Sources */,
 			);

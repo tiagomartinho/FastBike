@@ -10,7 +10,7 @@ class BikeMapViewController: UIViewController, MKMapViewDelegate {
     var mapZoomSet = false
     @IBOutlet var bikeButton: UIButton!
     @IBOutlet var parkButton: UIButton!
-    lazy var service: BikeStationService? = TrentinoBikeStationService(services: TrentinoBikeStationServiceFactory.get())
+    lazy var service: BikeStationService? = BikeStationServiceAggregator(services: TrentinoBikeStationServiceFactory.get())
 
     override func viewDidLoad() {
         super.viewDidLoad()

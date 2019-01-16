@@ -5,8 +5,8 @@ class TrentoBikeStationServiceTest: XCTestCase {
 
     func testIfReturning() {
         let expectation = XCTestExpectation(description: "Waiting for network request")
-        let delegate = TrentoBikeStationServiceDelegate(expectation: expectation)
-        let service = TrentoBikeStationService(url: URL(string: "https://os.smartcommunitylab.it/core.mobility/bikesharing/lavis")!)
+        let delegate = SpyBikeStationServiceDelegate(expectation: expectation)
+        let service = TrentinoBikeStationService(url: URL(string: "https://os.smartcommunitylab.it/core.mobility/bikesharing/lavis")!)
 
         service.getStations(delegate: delegate)
 
@@ -14,7 +14,7 @@ class TrentoBikeStationServiceTest: XCTestCase {
         XCTAssertFalse(delegate.stations.isEmpty)
     }
 
-    class TrentoBikeStationServiceDelegate:BikeStationServiceDelegate {
+    class SpyBikeStationServiceDelegate: BikeStationServiceDelegate {
         var stations:[BikeStation] = []
 
         let expectation:XCTestExpectation
