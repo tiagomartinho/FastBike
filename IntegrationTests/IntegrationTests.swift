@@ -6,9 +6,9 @@ class TrentoBikeStationServiceTest: XCTestCase {
     func testIfReturning() {
         let expectation = XCTestExpectation(description: "Waiting for network request")
         let delegate = TrentoBikeStationServiceDelegate(expectation: expectation)
-        let service = TrentoBikeStationService(delegate: delegate)
+        let service = TrentoBikeStationService()
 
-        service.getStations()
+        service.getStations(delegate: delegate)
 
         wait(for: [expectation], timeout: 10)
         XCTAssertFalse(delegate.stations.isEmpty)
