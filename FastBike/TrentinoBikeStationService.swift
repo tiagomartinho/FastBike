@@ -22,10 +22,10 @@ class TrentinoBikeStationService: BikeStationService {
                 print(error.localizedDescription)
             
         case let (data?, response?, _) where self.isSuccess(response: response) :
-            if let jsonData = self.getJson(from: data) {
-                self.populateBikeStations(with: jsonData)
+            if let stations = try? JSONDecoder().decode([BikeStationNew].self, from: data) {
+                let legacyStations = stations.compactMap { BikeStation(bikeStationNew: $0) }
+                self.delegate?.set(bikeStations: legacyStations)
             }
-            
         default:
             print("unhandled case")
         }
@@ -37,17 +37,5 @@ class TrentinoBikeStationService: BikeStationService {
         }
         
         return false
-    }
-
-    private func getJson(from data: Data) -> [[String:AnyObject]]? {
-        if let rawJson = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) {
-            return rawJson as? [[String:AnyObject]]
-        }
-        return .none
-    }
-
-    func populateBikeStations(with json: [[String:AnyObject]]) {
-        let bikeStations = json.map { BikeStation(json: $0) }
-        self.delegate?.set(bikeStations: bikeStations)
     }
 }

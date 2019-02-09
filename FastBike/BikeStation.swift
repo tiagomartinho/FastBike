@@ -33,6 +33,19 @@ struct BikeStation: Equatable {
     }
 }
 
+extension BikeStation {
+    init(bikeStationNew: BikeStationNew) {
+        self.name = bikeStationNew.name
+        self.address = bikeStationNew.address
+        self.id = bikeStationNew.id
+        self.bikes = bikeStationNew.bikes
+        self.slots = bikeStationNew.slots
+        self.totalSlots = bikeStationNew.totalSlots
+        self.location = CLLocation(latitude: bikeStationNew.position[0],
+                                   longitude: bikeStationNew.position[1])
+    }
+}
+
 struct BikeStationNew: Equatable, Codable {
     let name: String
     let address: String
